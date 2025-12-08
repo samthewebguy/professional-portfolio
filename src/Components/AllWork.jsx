@@ -59,15 +59,15 @@ const AllWork = () => {
                 </div>
                 ))}
               </div>
-              <div className='w-full flex flex-row items-center justify-between mt-4'>
+              <div className='w-full flex flex-col md:flex-row items-start justify-between mt-4 gap-6'>
                 <div className="flex items-center gap-2">
                   {project.tools.map((tool, index) => (
-                  <img key={index} src={tool.icon} alt={tool.name} title={tool.name} className="bg-[rgba(75,75,75,0.07)] rounded-sm shadow-md shadow-[#000000]/20 p-1 h-8 w-8 object-contain grayscale invert-0 group-hover:grayscale-0 transition duration-300"/>
+                  <img key={index} src={tool.icon} alt={tool.name} title={tool.name} className="bg-[rgba(75,75,75,0.07)] rounded-sm shadow-md shadow-[#000000]/20 p-1 h-8 w-8 object-contain grayscale-0 md:grayscale md:invert-0 group-hover:grayscale-0 transition duration-300"/>
                   ))}
                 </div>
                 <div className="flex items-center justify-center gap-2 first-child:bg-white">
                   {project.urls.map((url, index) => (
-                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`opacity-80 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-[#a1a1a1] text-xs font-semibold ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
+                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`opacity-80 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-[#a1a1a1] text-sm font-semibold ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
                   {url.icon && (
                     <FontAwesomeIcon icon={url.icon} className="h-3 w-3 ml-2" />
                     )}
