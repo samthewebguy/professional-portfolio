@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/creato-display');
+
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --font-sans: 'Creato Display', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  body {
+    @apply font-sans;
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .project-image {
+  transform:
+    translate3d(0, 0, 0)
+    scale3d(0.98, 0.98, 0.98)
+    rotateX(4deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg, 0deg);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-image:hover {
+  transform:
+    translate3d(0px, 0px, 0px)
+    scale3d(1, 1, 1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg, 0deg);
+}
+
+
+/* Custom Keyframes for Scrolling */
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - var(--gap) / 2));
+  }
+}
+
+
+.fade-mask {
+  -webkit-mask: linear-gradient(90deg, transparent 0, #fff 80px, #fff calc(100% - 80px), transparent 100%);
+  mask: linear-gradient(90deg, transparent 0, #fff 80px, #fff calc(100% - 80px), transparent 100%);
+}
+
+
+.animate-marquee {
+  animation: scroll var(--duration) linear infinite;
+  animation-play-state: running; 
+}
+
+
+.bg-grid-dotted {
+
+  background-image: 
+
+    linear-gradient(to bottom, #4B4B4B 1px, transparent 1px),
+
+    linear-gradient(to right, #4B4B4B 1px, transparent 1px);
+
+  background-image: 
+
+    radial-gradient(#4B4B4B 1.5px, transparent 1.5px), 
+
+    linear-gradient(to bottom, #4B4B4B 1px, transparent 1px),
+
+    linear-gradient(to right, #4B4B4B 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+}
+}
