@@ -62,7 +62,7 @@ const SelectedProjects = () => {
               <div className='w-full flex flex-col md:flex-row items-start justify-between mt-4 gap-6'>
                 <div className="flex items-center gap-2">
                   {project.tools.map((tool, index) => (
-                  <img key={index} src={tool.icon} alt={tool.name} title={tool.name} className="bg-[rgba(75,75,75,0.07)] rounded-sm shadow-md shadow-[#000000]/20 p-1 h-8 w-8 object-contain grayscale invert-0 group-hover:grayscale-0 transition duration-300"/>
+                  <img key={index} src={tool.icon} alt={tool.name} title={tool.name} className="bg-[rgba(75,75,75,0.07)] rounded-sm shadow-md shadow-[#000000]/20 p-1 h-8 w-8 object-contain grayscale-0 md:grayscale md:invert-0 group-hover:grayscale-0 transition duration-300"/>
                   ))}
                 </div>
                 <div className="flex items-center justify-center gap-2 first-child:bg-white">
