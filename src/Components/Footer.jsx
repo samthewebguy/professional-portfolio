@@ -19,13 +19,13 @@ const Footer = () => {
   return (
     <footer className='w-full flex flex-col items-center justify-center mt-40 px-6 mb-20'>
         <section className='w-full max-w-[680px] flex flex-col items-center justify-center gap-6'>
-            <div className='w-full flex flex-row items-center justify-between text-left gap-6'>
-                <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>let's work together</h2>
+            <div className='w-full flex flex-row items-center justify-between gap-6'>
+                <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>let's work together</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>book a call, and I'll take care of the rest</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
-                <h4 className='text-md text-white text-left font-medium leading-tight'>have an idea or project in mind?</h4>
-                <p className='text-sm text-[#a1a1a1] text-left font-normal leading-normal'>i'm open to freelance and long-term collaboration opportunities.</p>
+                <h4 className='text-lg text-white text-left font-medium leading-tight'>have an idea or project in mind?</h4>
+                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>i'm open to freelance and long-term collaboration opportunities.</p>
             </div>
 
             {/* Cal Embed */}

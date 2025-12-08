@@ -21,8 +21,8 @@ const About = () => {
 
   return (
         <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-            <div className='w-full max-w-[680px] flex flex-row items-center justify-between text-left gap-6'>
-                <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>about me</h2>
+            <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
+                <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>about me</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>more than just code. I build experiences</p>
             </div>
             <div className='w-full max-w-[680px] grid grid-cols-1 md:grid-cols-2 items-center justify-start mt-10 gap-10'>
