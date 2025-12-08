@@ -44,15 +44,15 @@ const Footer = () => {
             <div className='w-full flex flex-col items-center justify-center'>
                 {FooterLinks.map((link, index) => (
                     <div key={index} className='w-full flex flex-row items-center justify-between text-center gap-2 border-t border-[#4B4B4B80] py-4'>
-                    <p className='text-md text-white text-left font-normal leading-tight'>{link.title}</p>
+                    <p className='text-md text-white text-left font-medium leading-tight'>{link.title}</p>
                     <a href={link.to} target='_blank' rel='noopener noreferrer' className='text-md text-[#4b4b4b] hover:text-[#a1a1a1] font-normal leading-normal transition-colors duration-300'>
                         {link.link} <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" />
                     </a>
                     </div>
                 ))}
                 <div className='w-full flex flex-row items-center justify-between gap-2 border-t border-b border-[#4B4B4B80] py-4 mt-10'>
-                    <p className='text-md text-white text-left font-normal leading-tight'>portfolio design by</p>
-                    <a href="https://www.amirah.com" target='_blank'  rel='noopener noreferrer' className='text-sm text-[#4b4b4b] hover:text-[#a1a1a1] font-normal leading-normal transition-colors duration-300'>amirah, product designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" /></a>
+                    <p className='text-md text-white text-left font-medium leading-tight'>portfolio design by</p>
+                    <a href="https://www.amirah.com" target='_blank'  rel='noopener noreferrer' className='text-md text-[#4b4b4b] hover:text-[#a1a1a1] font-normal leading-normal transition-colors duration-300'>amirah, product designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" /></a>
                 </div>
             </div>
         </section>
