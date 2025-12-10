@@ -25,7 +25,7 @@ const SelectedProjects = () => {
   const getButtonClass = (buttonFilter) => {
     const baseClasses = 'cursor-pointer transition-colors duration-300 px-4 py-1 rounded-full text-sm font-medium';
     const inactiveClasses = 'text-[#4b4b4b] hover:text-[#a1a1a1]';
-    const activeClasses = 'text-white bg-[#4b4b4b] hover:bg-[#a1a1a1]';
+    const activeClasses = 'text-white';
 
     return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
     };

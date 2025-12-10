@@ -12,19 +12,34 @@ export const Stacks = [
     alt: "Webflow logo",
   },
   {
+    name: "Carrd",
+    image: "/Stacks/Carrd.png",
+    alt: "Carrd logo",
+  },
+  {
+    name: "WordPress",
+    image: "/Stacks/WordPress.png",
+    alt: "WordPress logo",
+  },
+  {
+    name: "Shopify",
+    image: "/Stacks/Shopify.png",
+    alt: "Shopify logo",
+  },
+  {
     name: "React.js",
     image: "/Stacks/React.png",
     alt: "React.js logo",
   },
   {
-    name: "TailwindCSS",
-    image: "/Stacks/TailwindCSS.png",
-    alt: "TailwindCSS logo",
-  },
-  {
     name: "JavaScript",
     image: "/Stacks/JavaScript.png",
     alt: "JavaScript logo",
+  },
+  {
+    name: "TailwindCSS",
+    image: "/Stacks/TailwindCSS.png",
+    alt: "TailwindCSS logo",
   },
   {
     name: "CSS",
@@ -37,14 +52,24 @@ export const Stacks = [
     alt: "HTML5 logo",
   },
   {
-    name: "Carrd",
-    image: "/Stacks/Carrd.png",
-    alt: "Carrd logo",
+    name: "Vercel",
+    image: "/Stacks/Vercel.png",
+    alt: "Vercel logo",
   },
   {
-    name: "WordPress",
-    image: "/Stacks/WordPress.png",
-    alt: "WordPress logo",
+    name: "Netlify",
+    image: "/Stacks/Netlify.png",
+    alt: "Netlify logo",
+  },
+  {
+    name: "GitHub",
+    image: "/Stacks/Github.png",
+    alt: "GitHub logo",
+  },
+  {
+    name: "Chrome DevTools",
+    image: "/Stacks/Chrome Devtools.png",
+    alt: "Chrome DevTools logo",
   },
   {
     name: "Figma",
@@ -57,11 +82,6 @@ export const Stacks = [
     alt: "Canva logo",
   },
   {
-    name: "Shopify",
-    image: "/Stacks/Shopify.png",
-    alt: "Shopify logo",
-  },
-  {
     name: "Membervault",
     image: "/Stacks/Membervault.png",
     alt: "Membervault logo",
@@ -70,21 +90,6 @@ export const Stacks = [
     name: "Kajabi",
     image: "/Stacks/Kajabi.png",
     alt: "Kajabi logo",
-  },
-  {
-    name: "Notion",
-    image: "/Stacks/Notion.png",
-    alt: "Notion logo",
-  },
-  {
-    name: "Trello",
-    image: "/Stacks/Trello.png",
-    alt: "Trello logo",
-  },
-  {
-    name: "Google Workspace",
-    image: "/Stacks/Google Workspace.png",
-    alt: "Google Workspace logo",
   },
   {
     name: "Zapier",
@@ -107,19 +112,19 @@ export const Stacks = [
     alt: "Kit logo",
   },
   {
-    name: "Vercel",
-    image: "/Stacks/Vercel.png",
-    alt: "Vercel logo",
+    name: "Notion",
+    image: "/Stacks/Notion.png",
+    alt: "Notion logo",
   },
   {
-    name: "Netlify",
-    image: "/Stacks/Netlify.png",
-    alt: "Netlify logo",
+    name: "Trello",
+    image: "/Stacks/Trello.png",
+    alt: "Trello logo",
   },
   {
-    name: "GitHub",
-    image: "/Stacks/Github.png",
-    alt: "GitHub logo",
+    name: "Google Workspace",
+    image: "/Stacks/Google Workspace.png",
+    alt: "Google Workspace logo",
   },
   {
     name: "ChatGPT",
@@ -145,10 +150,5 @@ export const Stacks = [
     name: "Page Speed Insights",
     image: "/Stacks/PageSpeed.png",
     alt: "Page Speed Insights logo",
-  },
-  {
-    name: "Chrome DevTools",
-    image: "/Stacks/Chrome Devtools.png",
-    alt: "Chrome DevTools logo",
   },
 ];

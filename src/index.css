@@ -20,6 +20,11 @@
 }
 
 @layer utilities {
+
+  html {
+  scroll-behavior: smooth;
+}
+
   .project-image {
   transform:
     translate3d(0, 0, 0)

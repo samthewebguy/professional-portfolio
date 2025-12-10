@@ -37,6 +37,9 @@ const Services = () => {
             </div>
           ))}
         </div>
+
+        {/* Show More CTA */}
+        
           <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>
             {hasMoreServices && (
             <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>show all services ({MyServices.length - visibleCount} more)
