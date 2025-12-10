@@ -10,7 +10,7 @@ export const FooterLinks = [
     {
         title: "contra",
         link: "hire me",
-        to: "https://www.contra.com/",
+        to: "https://www.contra.com/samuelobazee",
     },
     {
         title: "email",

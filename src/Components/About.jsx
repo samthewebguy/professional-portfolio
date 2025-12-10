@@ -35,7 +35,7 @@ const About = () => {
                     <br /><br /> 
                     When I'm not working, you'll find me brainstorming, scrolling through X (formerly Twitter) to share my thoughts, catching up on the latest news, or usually having a good laugh. And lastly, Chelsea FC for life!</p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
-                        <a href="https://github.com/samthewebguy" target='_blank' className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>download resume</a>
+                        <a href="" target='_blank' className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>download resume</a>
                     </div>
                 </div>
             </div>
