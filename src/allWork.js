@@ -58,7 +58,7 @@ export const AllProjects = [
   },
 
   {
-    id: "FD02",
+    id: "FD01",
     image: "/Projects/Vue js.png",
     alt: "Vue.js website clone preview cover image",
     title: "Vue.js Clone",
@@ -100,9 +100,8 @@ export const AllProjects = [
       },
     ],
   },
-
   {
-    id: "FD03",
+    id: "FD02",
     image: "/Projects/AdviceGeneratorApp.gif",
     alt: "Advice Generator App preview cover image",
     title: "Advice Generator App",
@@ -139,6 +138,44 @@ export const AllProjects = [
       {
         name: "view code",
         to: "https://github.com/samthewebguy/advice-generator-app",
+        icon: faArrowUpRightFromSquare,
+      },
+    ],
+  },
+  {
+    id: "FD03",
+    image: "/Projects/word-letter-counter.gif",
+    alt: "Word and Letter Counter preview cover image",
+    title: "Word and Letter Counter",
+    description:
+      "A simple web app that counts the number of words and letters in a given text input. It demonstrates proficiency in JavaScript for text manipulation and dynamic content updating.",
+
+    results: [
+      "Accurate word and letter counting",
+      "Real-time updates as user types",
+      "User-friendly interface",
+      "Responsive design for all devices",
+    ],
+
+    tools: [
+      {
+        name: "React JS",
+        icon: "/Stacks/React.png",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "/Stacks/TailwindCSS.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://word-and-letter-counter-web-app.vercel.app",
+      },
+      {
+        name: "view code",
+        to: "https://github.com/samthewebguy/word-and-letter-counter",
         icon: faArrowUpRightFromSquare,
       },
     ],
