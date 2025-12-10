@@ -21,7 +21,7 @@ const Testimonial = () => {
 
   return (
     <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
+        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-10'>
             <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>what founders say</h2>
             <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>fortunate to work with amazing people</p>
         </div>
