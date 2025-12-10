@@ -61,12 +61,10 @@ const Home = () => {
         {/* Video Animation */}
 
         <section className='w-full flex items-center justify-center mt-12 mb-12 px-6'>
-            <div className='w-full max-w-[680px] flex items-center justify-center  rounded-2xl overflow-hidden shadow-2xl shadow-[#4b4b4b]/25  bg-[rgba(75,75,75,0.11)] border border-[#4b4b4b38]'>
+            <div className='w-full max-w-[680px] flex items-center justify-center shadow-2xl shadow-[#4b4b4b]/25  bg-[rgba(75,75,75,0.11)] border border-[#4b4b4b38] relative pt-[75%] overflow-hidden rounded-2xl md:max-w-[608px] xl:pt-[33%]'>
             <iframe 
-                className='rounded-2xl object-cover overflow-hidden'
+                className='rounded-2xl object-cover overflow-hidden absolute top-0 left-0 w-full h-full'
                 src="https://player.vimeo.com/video/1143432490?badge=0&controls=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1" 
-                width="608" 
-                height="500"
                 title="SAMTHEWEBGUY WORK"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 style={{ border: 'none' }}

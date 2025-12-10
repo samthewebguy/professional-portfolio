@@ -39,7 +39,7 @@ const Services = () => {
         </div>
 
         {/* Show More CTA */}
-        
+
           <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>
             {hasMoreServices && (
             <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>show all services ({MyServices.length - visibleCount} more)
@@ -50,12 +50,10 @@ const Services = () => {
       {/* Video Animation */}
 
       <section className='w-full flex items-center justify-center mt-16 px-6'>
-        <div className='w-full max-w-[680px] flex items-center justify-center  rounded-2xl overflow-hidden shadow-2xl shadow-[#4b4b4b]/25  bg-[rgba(75,75,75,0.11)] border border-[#4b4b4b38]'>
+        <div className='w-full max-w-[680px] flex items-center justify-center shadow-2xl shadow-[#4b4b4b]/25  bg-[rgba(75,75,75,0.11)] border border-[#4b4b4b38] relative pt-[75%] overflow-hidden rounded-2xl md:max-w-[608px] xl:pt-[33%]'>
         <iframe 
-          className='rounded-2xl object-cover overflow-hidden'
+          className='rounded-2xl object-cover overflow-hidden absolute top-0 left-0 w-full h-full'
           src="https://player.vimeo.com/video/1143432490?badge=0&controls=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1" 
-          width="608" 
-          height="500"
           title="SAMTHEWEBGUY WORK"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
           style={{ border: 'none' }}
