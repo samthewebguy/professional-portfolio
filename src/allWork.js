@@ -144,7 +144,7 @@ export const AllProjects = [
   },
   {
     id: "FD03",
-    image: "/Projects/word-letter-counter.gif",
+    image: "/Projects/Word-letter-counter.gif",
     alt: "Word and Letter Counter preview cover image",
     title: "Word and Letter Counter",
     description:
