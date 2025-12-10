@@ -25,7 +25,7 @@ const AllWork = () => {
       const getButtonClass = (buttonFilter) => {
         const baseClasses = 'cursor-pointer transition-colors duration-300 px-4 py-1 rounded-full text-sm font-medium';
         const inactiveClasses = 'text-[#4b4b4b] hover:text-[#a1a1a1]';
-        const activeClasses = 'text-white bg-[#4b4b4b] hover:bg-[#a1a1a1]';
+        const activeClasses = 'text-white';
     
         return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
         };
@@ -33,7 +33,7 @@ const AllWork = () => {
   return (
 
         <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-        <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-between gap-6 fixed top-40 z-30'>
+        <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-between gap-6 sticky top-40 z-30'>
             <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>selected projects</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
                 <button type='button' onClick={() => handleFilterChange('ALL')}  className={getButtonClass('ALL')}>all</button>

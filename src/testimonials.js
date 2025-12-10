@@ -34,7 +34,7 @@ export const Testimonials = [
         client: "Monisha Chandanani",
         title: "Founder, See.Love.Choose.",
         image: "/Testimonials/Monisha.jpg",
-        alt: "Portrait ofMonisha Chandanani, Founder, See.Love.Choose.",
+        alt: "Portrait of Monisha Chandanani, Founder, See.Love.Choose.",
     },
     {
         statement: "Samuel's professionalism and attention to detail were outstanding, and he delivered the project both quickly and efficiently. His ability to blend creativity with functionality resulted in a landing page that not only looks great but also performs excellently. I highly recommend Samuel.",
