@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Projects } from '../projects'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const SelectedProjects = () => {
 
@@ -81,7 +82,7 @@ const SelectedProjects = () => {
 
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>
-          <a href="/work" className='w-full bg-[#4B4B4B] border border-[#4B4B4B] py-3 px-6 rounded-full text-white text-lg font-medium transition-colors duration-300'>view more projects</a>
+          <Link to="/work" className='w-full bg-[#4B4B4B] border border-[#4B4B4B] py-3 px-6 rounded-full text-white text-lg font-medium transition-colors duration-300'>view more projects</Link>
           <a href="https://github.com/samthewebguy" target='_blank' className='w-full border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>visit github profile</a>
         </div>
     </section>
