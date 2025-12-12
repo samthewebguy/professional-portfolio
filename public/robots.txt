@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Directs bots to the location of sitemap
+Sitemap: https://www.samthewebguy.com/sitemap.xml
