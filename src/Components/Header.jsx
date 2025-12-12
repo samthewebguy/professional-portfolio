@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <header className='fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-center pt-12 px-6'>
           <nav className='w-full max-w-[608px] bg-[#121212] flex items-center justify-between py-4 px-8 border border-[#4b4b4b] rounded-full shadow-lg shadow-[#4b4b4b]/15 hover:shadow-[#4b4b4b]/25'>
-              <a className='Logo w-full h-5 flex items-center justify-start' href='/'>
+              <a className='Logo w-40 h-5 flex items-center justify-start' href='/'>
                   <img src={SiteLogo} alt="SAMTHEWEBGUY logo" />
               </a>
               <div className='DesktopNav hidden md:flex flex-row items-center justify-center gap-2 text-sm text-[#A1A1A1] font-normal'>

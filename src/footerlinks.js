@@ -3,11 +3,6 @@ import { Link } from "react-router-dom"
 
 export const FooterLinks = [
     {
-        title: "upwork",
-        link: "hire me",
-        to: "https://www.upwork.com",
-    },
-    {
         title: "contra",
         link: "hire me",
         to: "https://www.contra.com/samuelobazee",

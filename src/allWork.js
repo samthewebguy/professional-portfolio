@@ -143,7 +143,7 @@ export const AllProjects = [
     ],
   },
   {
-    id: "FD03",
+    id: "FD04",
     image: "/Projects/Word-letter-counter.gif",
     alt: "Word and Letter Counter preview cover image",
     title: "Word and Letter Counter",
@@ -176,6 +176,174 @@ export const AllProjects = [
       {
         name: "view code",
         to: "https://github.com/samthewebguy/word-and-letter-counter",
+        icon: faArrowUpRightFromSquare,
+      },
+    ],
+  },
+  {
+    id: "FD06",
+    image: "/Projects/simple-calculator.png",
+    alt: "Simple calculator preview cover image",
+    title: "Simple Calculator",
+    description:
+      "Developed a simple, functional calculator using native HTML, CSS, and JavaScript. Focused on DOM manipulation and event handling to accurately process basic arithmetic operations, ensuring a responsive layout across devices.",
+
+    results: [
+      "Accurate arithmetic operations",
+      "Intuitive user interface",
+      "Efficient event handling",
+    ],
+
+    tools: [
+      {
+        name: "HTML",
+        icon: "/Stacks/HTML.png",
+      },
+      {
+        name: "CSS",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://simple-calculator-gray-ten.vercel.app",
+      },
+      {
+        name: "view code",
+        to: "https://github.com/samthewebguy/simple-calculator",
+        icon: faArrowUpRightFromSquare,
+      },
+    ],
+  },
+  {
+    id: "FD03",
+    image: "/Projects/Portfolio.png",
+    alt: "Professional Portfolio Website preview cover image",
+    title: "Professional Portfolio Website",
+    description:
+      "A custom-developed portfolio built with React.js and Tailwind CSS, designed to demonstrate my proficiency in high-performance frontend technologies. Highlights my expertise in responsive design, UI implementation, user experience, and full project lifecycle management.",
+
+    results: [
+      "High-performance frontend",
+      "Responsive & engaging UI",
+      "Optimized user experience",
+      "Comprehensive project showcase",
+    ],
+
+    tools: [
+      {
+        name: "React JS",
+        icon: "/Stacks/React.png",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "/Stacks/TailwindCSS.png",
+      },
+      {
+        name: "Figma",
+        icon: "/Stacks/Figma.png",
+      },
+      {
+        name: "Canva",
+        icon: "/Stacks/Canva.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://www.samthewebguy.com",
+      },
+      {
+        name: "view code",
+        to: "https://github.com/samthewebguy/professional-portfolio",
+        icon: faArrowUpRightFromSquare,
+      },
+    ],
+  },
+  {
+    id: "FD05",
+    image: "/Projects/CentralHQ.gif",
+    alt: "CentralHQ clone preview cover image",
+    title: "CentralHQ Clone",
+    description:
+      "A fully custom clone of the CentralHQ website, recreated as a personal project to improve my front-end development skills. This project highlights my ability to work implement responsive design principles, and create an engaging user interface using HTML, CSS, and JavaScript.",
+
+    results: [
+      "100% Visual fidelity",
+      "Seamless cross-device responsiveness",
+    ],
+
+    tools: [
+      {
+        name: "HTML",
+        icon: "/Stacks/HTML.png",
+      },
+      {
+        name: "CSS",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://centralhq-website-clone.vercel.app",
+      },
+      {
+        name: "view code",
+        to: "https://github.com/samthewebguy/centralhq-website-clone",
+        icon: faArrowUpRightFromSquare,
+      },
+    ],
+  },
+  {
+    id: "FD07",
+    image: "/Projects/Extension-manager.gif",
+    alt: "Browser Extensions Manager preview cover image",
+    title: "Browser Extensions Manager",
+    description:
+      "Functional browser extension manager built with HTML, CSS, and JavaScript. Includes dynamic rendering, add/remove logic, and optimized UI performance.",
+
+    results: [
+      "Clear and scalable CRUD",
+      "Dynamic, single-page interface",
+      "Optimized for low overhead",
+    ],
+
+    tools: [
+      {
+        name: "HTML",
+        icon: "/Stacks/HTML.png",
+      },
+      {
+        name: "CSS",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://browser-extensions-manager-gamma.vercel.app",
+      },
+      {
+        name: "view code",
+        to: "https://github.com/samthewebguy/browser-extensions-manager",
         icon: faArrowUpRightFromSquare,
       },
     ],

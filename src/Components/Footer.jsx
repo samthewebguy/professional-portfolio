@@ -45,19 +45,19 @@ const Footer = () => {
                 {FooterLinks.map((link, index) => (
                     <div key={index} className='w-full flex flex-row items-center justify-between text-center gap-2 border-t border-[#4B4B4B80] py-4'>
                     <p className='text-md text-white text-left font-medium leading-tight'>{link.title}</p>
-                    <a href={link.to} target='_blank' rel='noopener noreferrer' className='text-md text-[#4b4b4b] hover:text-[#a1a1a1] font-normal leading-normal transition-colors duration-300'>
+                    <a href={link.to} target='_blank' rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>
                         {link.link} <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" />
                     </a>
                     </div>
                 ))}
                 <div className='w-full flex flex-row items-center justify-between gap-2 border-t border-b border-[#4B4B4B80] py-4 mt-10'>
                     <p className='text-md text-white text-left font-medium leading-tight'>portfolio design by</p>
-                    <a href="https://www.amirah.com" target='_blank'  rel='noopener noreferrer' className='text-md text-[#4b4b4b] hover:text-[#a1a1a1] font-normal leading-normal transition-colors duration-300'>amirah, product designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" /></a>
+                    <a href="https://www.amirah.com" target='_blank'  rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>amirah, product designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" /></a>
                 </div>
             </div>
         </section>
             <div className='w-full max-w-[690px] flex items-center justify-center text-center mt-10'>
-            <p className='text-sm text-[#4b4b4b] font-normal leading-normal'>&copy; samthewebguy {currentYear}. all rights reserved | portfolio built by Samuel Obazee </p>
+            <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>&copy; samthewebguy {currentYear}. all rights reserved | portfolio built by Samuel Obazee </p>
         </div>
     </footer>
   )

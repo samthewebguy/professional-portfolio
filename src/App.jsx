@@ -15,15 +15,17 @@ function App() {
   return (
     <>
       <Header/>
-      <FloatingBadge/>
-      <WorldTime />
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/work' element={<Work />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/stack' element={<Stack />} />
-      </Routes>
+      <main>
+        <FloatingBadge/>
+        <WorldTime />
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/work' element={<Work />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/stack' element={<Stack />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   )
