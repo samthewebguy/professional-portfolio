@@ -24,7 +24,7 @@ const Footer = () => {
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>book a call, and I'll take care of the rest</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
-                <h4 className='text-lg text-white text-left font-medium leading-tight'>have an idea or project in mind?</h4>
+                <p className='text-lg text-white text-left font-medium leading-tight'>have an idea or project in mind?</p>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>i'm open to freelance and long-term collaboration opportunities.</p>
             </div>
 

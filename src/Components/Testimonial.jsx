@@ -32,7 +32,7 @@ const Testimonial = () => {
                         <div className='flex flex-row items-start justify-center text-left gap-4'>
                             <img src={testimonial.image} alt={testimonial.alt} className='w-12 h-12 object-cover object-center rounded-full shadow-md shadow-[#000000]/20' />
                             <div className='flex flex-col items-start justify-center text-left gap-1'>
-                                <h4 className='text-md text-white font-medium leading-tight'>{testimonial.client}</h4>
+                                <p className='text-md text-white font-medium leading-tight'>{testimonial.client}</p>
                                 <span className='text-sm text-[#a1a1a1] text-left font-normal leading-normal'>{testimonial.title}</span>
                             </div>
                         </div>

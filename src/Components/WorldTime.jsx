@@ -33,7 +33,7 @@ const LocalTimeDisplay = () => {
     }, []);
 
     return (
-        <div className='fixed top-4 z-50 right-4 text-sm text-[#4b4b4b] font-normal leading-normal '>
+        <div className='fixed top-4 z-50 right-4 text-sm text-[#a1a1a1] font-normal leading-normal '>
             <p>Local Time: <span>{currentTime}</span></p> 
         </div>
     );
