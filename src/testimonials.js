@@ -9,6 +9,13 @@ export const Testimonials = [
         alt: "Portrait of Aldo Andika, Founder, Lunar Light Creative",
     },
     {
+        statement: "I've worked closely with Sam over the years, and he's one of those developers you genuinely enjoy collaborating with. He's reliable, detail-oriented, and has a strong ability to translate designs into clean, functional websites without losing the original design intent. Having worked together on several projects, I can confidently say Sam brings a thoughtful, solutions-driven mindset to every build. I'd recommend him to anyone looking for a skilled and dependable website developer.",
+        client: "Amirah Temitope",
+        title: "Product Designer",
+        image: "/Testimonials/Amirah_Temitope.jpeg",
+        alt: "Portrait of Amirah Temitope, Product Designer",
+    },
+    {
         statement: "I'm genuinely thrilled with the outcome and couldn't be happier. If you need someone trustworthy, talented, and reliable for a website migration or redesign, hire Sam. You won't regret it!",
         client: "Matt Xavier",
         title: "Founder, Integrated Psychedelics",
