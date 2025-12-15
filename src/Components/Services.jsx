@@ -28,7 +28,7 @@ const Services = () => {
         </div>
         <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
           {servicesToShow.map((service, index) => (
-            <div key={index} className='group bg-[#4B4B4B1C] w-full flex flex-col md:flex-row items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
+            <div key={index} className='group bg-[#4B4B4B1C] w-full flex flex-row items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
               <img src={service.icon} alt={service.alt} className='bg-[rgba(75,75,75,0.07)] w-12 h-12 object-cover object-center rounded-full grayscale-0 md:grayscale md:invert-0 group-hover:grayscale-0 transition duration-300 shadow-md shadow-[#000000]/20 p-1' />
               <div className='flex flex-col items-start justify-center text-left gap-2'>
                 <h3 className='text-xl text-white font-normal leading-tight'>{service.title}</h3>
