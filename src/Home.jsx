@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center mt-4 gap-4'>
                     <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>i build high-converting, revenue-driving websites for <span className='text-white'> startups and global brands.</span></h1>
-                    <p className='text-md text-[#a1a1a1] font-normal leading-normal'>versatile website developer with <span className='text-white'>4+ years of experience</span> building functional, scalable websites using <span className='text-white'>low-code, no-code, and CMS tools.</span></p>
+                    <p className='text-md text-[#a1a1a1] font-normal leading-normal'>versatile website developer with 4+ years of experience building functional, scalable websites that performs better <span className='text-white'>using no-code, low-code, and CMS tools.</span></p>
                 </div>
                 <div className='w-full flex flex-row items-center justify-center gap-4 mt-8'>
                     <p className='mr-5 text-nowrap text-sm font-normal text-[#a1a1a1]'>I'M ALSO</p>

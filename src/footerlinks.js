@@ -24,7 +24,7 @@ export const FooterLinks = [
     },
     {
         title: "x (twitter)",
-        link: "follow me",
+        link: "let's connect",
         to: "https://www.x.com/technioo",
     }
 ];

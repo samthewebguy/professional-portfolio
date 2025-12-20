@@ -29,13 +29,13 @@ const About = () => {
                 <img src={SamHeadshot} alt="Samuel Obazee headhsot photograph" className='w-full h-120 md:h-full object-cover object-center rounded-sm' />
                 <div className='flex flex-col items-start justify-center text-left gap-4'>
                     <h3 className='text-xl text-white font-medium leading-tight'>think of me as someone who loves learning and figuring out how things work</h3>
-                    <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>My tech journey truly started in 2021 when I built my first website using Groove Funnel. Since then, I've worked with different CMS platforms and website builders, designing and developing functional, revenue-driven websites. I've always chased what makes me curious and what feels possible. That same feeling led me into frontend development, where I realized I could expand my capacity in the web space. Now I write code and build functional, efficient web applications.
+                    <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>My tech journey truly started in 2021 when I built my first website using Groove Funnel. Since then, I've worked with different CMS and website builder platforms, creating functional, revenue-driven websites. I've always chased what makes me curious and what feels possible. That same feeling led me into frontend development, where I realized I could expand my capacity in the web space. Now I write code and build functional, efficient web applications.
                     <br /><br /> 
                     Both paths have allowed me to work with startups and global brands, helping them bring ideas to life with flexibility and practical solutions. With me, your website performs efficiently and works hard for your business.
                     <br /><br /> 
                     When I'm not working, you'll find me brainstorming, scrolling through X (formerly Twitter) to share my thoughts, catching up on the latest news, or usually having a good laugh. And lastly, Chelsea FC for life!</p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
-                        <a href="" target='_blank' className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>download resume</a>
+                        <a href="#" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>download resume</a>
                     </div>
                 </div>
             </div>

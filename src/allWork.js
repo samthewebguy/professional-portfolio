@@ -4,7 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export const AllProjects = [
   {
-    id: "WD01",
+    id: "WD02",
     image: "/Projects/uecompliance.png",
     alt: "UE Compliance website preview cover image",
     title: "United Energy Compliance",
@@ -53,6 +53,95 @@ export const AllProjects = [
       {
         name: "live preview",
         to: "https://uecompliance.com",
+      },
+    ],
+  },
+
+  {
+    id: "WD01",
+    image: "/Projects/WFP.png",
+    alt: "World Fertility Project website preview cover image",
+    title: "World Fertility Project",
+    description: 
+    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building, empowering the 1 in 6 facing infertility and expanding access to care for all.",
+
+    results: [
+      "20.1k+ Organic impressions (3 months)",
+      "8.1 Average Google search position",
+      "Global-scale functional design",
+      "Google first-page ranking",
+      "Custom technical implementation",
+    ],
+
+    tools: [
+      {
+        name: "Squarespace",
+        icon: "/Stacks/Squarespace.png",
+      },
+      {
+        name: "CSS3",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+      {
+        name: "Figma",
+        icon: "/Stacks/Figma.png",
+      },
+    {
+        name: "Canva",
+        icon: "/Stacks/Canva.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://worldfertilityproject.com",
+      },
+    ],
+  },
+
+    {
+    id: "WD03",
+    image: "/Projects/DiventurAI.png",
+    alt: "DiventurAI website preview cover image",
+    title: "DiventurAI",
+    description: 
+    "DiventurAI is a mobile-first platform that transforms any location into a personalized adventure. Designed for families and explorers, the app blends AI-powered activity recommendations, interactive games, and trip planning tools to create real-world, fun-filled experiences—anywhere, anytime.",
+
+    results: [
+      "Highly optimized for app downloads",
+      "Scalable website structure",
+      "Responsive design",
+      "High-fidelity Figma to code sync",
+    ],
+
+    tools: [
+      {
+        name: "Carrd",
+        icon: "/Stacks/Carrd.png",
+      },
+      {
+        name: "CSS3",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+      {
+        name: "Figma",
+        icon: "/Stacks/Figma.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://diventurai.golcons.com",
       },
     ],
   },
@@ -180,47 +269,7 @@ export const AllProjects = [
       },
     ],
   },
-  {
-    id: "FD06",
-    image: "/Projects/simple-calculator.png",
-    alt: "Simple calculator preview cover image",
-    title: "Simple Calculator",
-    description:
-      "Developed a simple, functional calculator using native HTML, CSS, and JavaScript. Focused on DOM manipulation and event handling to accurately process basic arithmetic operations, ensuring a responsive layout across devices.",
 
-    results: [
-      "Accurate arithmetic operations",
-      "Intuitive user interface",
-      "Efficient event handling",
-    ],
-
-    tools: [
-      {
-        name: "HTML",
-        icon: "/Stacks/HTML.png",
-      },
-      {
-        name: "CSS",
-        icon: "/Stacks/CSS3.png",
-      },
-      {
-        name: "JavaScript",
-        icon: "/Stacks/JavaScript.png",
-      },
-    ],
-
-    urls: [
-      {
-        name: "live preview",
-        to: "https://simple-calculator-gray-ten.vercel.app",
-      },
-      {
-        name: "view code",
-        to: "https://github.com/samthewebguy/simple-calculator",
-        icon: faArrowUpRightFromSquare,
-      },
-    ],
-  },
   {
     id: "FD03",
     image: "/Projects/Portfolio.png",
@@ -308,7 +357,7 @@ export const AllProjects = [
     ],
   },
   {
-    id: "FD07",
+    id: "FD06",
     image: "/Projects/Extension-manager.gif",
     alt: "Browser Extensions Manager preview cover image",
     title: "Browser Extensions Manager",

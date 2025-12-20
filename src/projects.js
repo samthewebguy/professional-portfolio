@@ -4,7 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = [
   {
-    id: "WD01",
+    id: "WD02",
     image: "/Projects/uecompliance.png",
     alt: "UE Compliance website preview cover image",
     title: "United Energy Compliance",
@@ -58,6 +58,53 @@ export const Projects = [
   },
 
   {
+    id: "WD01",
+    image: "/Projects/WFP.png",
+    alt: "World Fertility Project website preview cover image",
+    title: "World Fertility Project",
+    description: 
+    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building, empowering the 1 in 6 facing infertility and expanding access to care for all.",
+
+    results: [
+      "20.1k+ Organic impressions (3 months)",
+      "8.1 Average Google search position",
+      "Global-scale functional design",
+      "Google first-page ranking",
+      "Custom technical implementation",
+    ],
+
+    tools: [
+      {
+        name: "Squarespace",
+        icon: "/Stacks/Squarespace.png",
+      },
+      {
+        name: "CSS3",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+      {
+        name: "Figma",
+        icon: "/Stacks/Figma.png",
+      },
+    {
+        name: "Canva",
+        icon: "/Stacks/Canva.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "live preview",
+        to: "https://worldfertilityproject.com",
+      },
+    ],
+  },
+
+  {
     id: "FD02",
     image: "/Projects/Vue js.png",
     alt: "Vue.js website clone preview cover image",
@@ -91,11 +138,11 @@ export const Projects = [
     urls: [
       {
         name: "live preview",
-        to: "https://github.com/samthewebguy/vuejs-clone",
+        to: "https://vuejs-website-clone-project.vercel.app",
       },
       {
         name: "view code",
-        to: "https://vuejs-website-clone-project.vercel.app",
+        to: "https://github.com/samthewebguy/vuejs-clone",
         icon: faArrowUpRightFromSquare,
       },
     ],
