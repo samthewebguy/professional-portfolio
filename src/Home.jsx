@@ -53,7 +53,7 @@ const Home = () => {
                         </div>
                         <p>Available to work on new projects! Let's talk.</p>
                     </div>
-                    <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition-colors duration-300'>Book a Free Discovery Cgall</a>
+                    <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition-colors duration-300'>Book a Free Discovery Call</a>
                 </div>
             </div>
         </section>
