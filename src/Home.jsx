@@ -22,12 +22,12 @@ const Home = () => {
                     <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-15 h-20 object-cover rounded-sm' />
                     <div className='flex flex-col items-start justify-center text-left'>
                         <h4 className='text-lg text-white font-medium leading-normal'>Samuel Obazee</h4>
-                        <p className='text-md text-[#a1a1a1] font-normal leading-normal'>website & frontend developer</p>
+                        <p className='text-md text-[#a1a1a1] font-normal leading-normal'>Website & Frontend Developer</p>
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-center mt-4 gap-4'>
-                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>i build high-converting, revenue-driving websites for <span className='text-white'> startups and global brands.</span></h1>
-                    <p className='text-md text-[#a1a1a1] font-normal leading-normal'>versatile website developer with 4+ years of experience building functional, scalable websites that performs better <span className='text-white'>using no-code, low-code, and CMS tools.</span></p>
+                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>I Build High-Converting, Revenue-Driving Websites for <span className='text-white'> Startups and Global Brands.</span></h1>
+                    <p className='text-md text-[#a1a1a1] font-normal leading-normal'>End-to-End Website Developer with 4+ years of experience building scalable, high-performance websites designed to <span className='text-white'>streamline user experience and drive business growth.</span></p>
                 </div>
                 <div className='w-full flex flex-row items-center justify-center gap-4 mt-8'>
                     <p className='mr-5 text-nowrap text-sm font-normal text-[#a1a1a1]'>I'M ALSO</p>
@@ -36,11 +36,11 @@ const Home = () => {
                 <div className='flex flex-col items-start justify-center mt-4 text-sm font-normal leading-normal'>
                     <div className='flex flex-row items-center justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faCode} />
-                        <p>a frontend developer — <span className='text-[#a1a1a1] italic'>focused on building efficient and user-centric web applications</span></p>
+                        <p>A Frontend Developer — <span className='text-[#a1a1a1] italic'>focused on building efficient and user-centric web applications</span></p>
                     </div>
                     <div className='flex flex-row items-center justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faHouse} />
-                        <p>freelancing — <span className='text-[#a1a1a1] italic'>but open to new collaborations</span></p>
+                        <p>Freelancing — <span className='text-[#a1a1a1] italic'>but open to new collaborations</span></p>
                     </div>
                 </div>
 
@@ -51,9 +51,9 @@ const Home = () => {
                         <div className='border-6 border-[rgba(0,185,22,0.22)] rounded-full animate-pulse'>
                             <div className='bg-[rgba(0,185,22,0.77)] w-3 h-3 rounded-full'></div>
                         </div>
-                        <p>available to work on new projects! Let's talk.</p>
+                        <p>Available to work on new projects! Let's talk.</p>
                     </div>
-                    <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition-colors duration-300'>book a free discovery call</a>
+                    <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition-colors duration-300'>Book a Free Discovery Cgall</a>
                 </div>
             </div>
         </section>
