@@ -22,8 +22,8 @@ const Testimonial = () => {
   return (
     <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-10'>
-            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>what founders say</h2>
-            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>fortunate to work with amazing people</p>
+            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>What Founders Say</h2>
+            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Fortunate to work with amazing people</p>
         </div>
         <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
                 {testimonialToShow.map((testimonial, index) => (
@@ -43,7 +43,7 @@ const Testimonial = () => {
                 
         <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>
             {hasMoreTestimonials && (
-                <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>show all testimonial ({Testimonials.length - visibleCount} more)
+                <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Show All Testimonials ({Testimonials.length - visibleCount} More)
                 </button>
             )}
         </div>

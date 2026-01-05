@@ -51,7 +51,7 @@ export const Projects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://uecompliance.com",
       },
     ],
@@ -98,7 +98,7 @@ export const Projects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://worldfertilityproject.com",
       },
     ],
@@ -137,11 +137,11 @@ export const Projects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://vuejs-website-clone-project.vercel.app",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
         icon: faArrowUpRightFromSquare,
       },
@@ -180,11 +180,11 @@ export const Projects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://advice-generator-app-alpha-khaki.vercel.app/",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
         icon: faArrowUpRightFromSquare,
       },

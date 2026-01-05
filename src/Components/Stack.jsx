@@ -5,19 +5,19 @@ const Stack = () => {
 
 const content = (
     <>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>frontend development</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & website builders</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>responsive design & prototyping</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>user experience</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>marketing & CRM</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>web performance optimization</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>testing & debugging</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>deployment</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>version control</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>productivity & project management</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>online course platforms</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>accessibility</span>
-        <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM tools</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Frontend Development</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & Website Builders</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Responsive Design & Prototyping</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>User Experience</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Marketing & CRM</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Web Performance Optimization</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Testing & Debugging</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Deployment</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Version Control</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Productivity & Project Management</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Online Course Platforms</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>Accessibility</span>
+        <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM Tools</span>
 
     </>
 );
@@ -25,8 +25,8 @@ const content = (
   return (
     <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between text-left gap-6'>
-            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>my tech stack</h2>
-            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>tools I use to bring ideas to life</p>
+            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>My Tech Stack</h2>
+            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Tools I use to bring ideas to life</p>
         </div>
         <div className='bg-[#4B4B4B] w-full max-w-[680px] grid grid-cols-3 md:grid-cols-5 items-stretch justify-start mt-10 gap-px'>
             {Stacks.map((stack, index) => (
@@ -44,37 +44,37 @@ const content = (
 
                 <>
                     {/* Block 1: Skills for the first scroll pass */}
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>frontend development</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & website builders</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>responsive design & prototyping</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>user experience</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>marketing & CRM</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>web performance optimization</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>testing & debugging</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>deployment</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>version control</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>productivity & project management</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>online course platforms</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>accessibility</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM tools</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Frontend Development</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & Website Builders</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Responsive Design & Prototyping</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>User Experience</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Marketing & CRM</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Web Performance Optimization</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Testing & Debugging</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Deployment</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Version Control</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Productivity & Project Management</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Online Course Platforms</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Accessibility</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM Tools</span>
                 </>
 
                 {/* Block 2: Duplicated skills for the seamless loop */}
                 
                 <>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>frontend development</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & website builders</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>responsive design & prototyping</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>user experience</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>marketing & CRM</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>web performance optimization</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>testing & debugging</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>deployment</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>version control</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>productivity & project management</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>online course platforms</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>accessibility</span>
-                    <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM tools</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Frontend Development</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>CMS & Website Builders</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Responsive Design & Prototyping</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>User Experience</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Marketing & CRM</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Web Performance Optimization</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Testing & Debugging</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Deployment</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Version Control</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Productivity & Project Management</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Online Course Platforms</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>Accessibility</span>
+                    <span className='px-4 border-r border-l border-[#4b4b4b]'>AI & LLM Tools</span>
                 </>
             </div>
         </div>

@@ -23,8 +23,8 @@ const Services = () => {
     <>
       <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
-          <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>what i do best</h2>
-          <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>let me handle the technical stuff</p>
+          <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>What I Do Best</h2>
+          <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Let me handle the technical stuff</p>
         </div>
         <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
           {servicesToShow.map((service, index) => (
@@ -42,7 +42,7 @@ const Services = () => {
 
           <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>
             {hasMoreServices && (
-            <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>show all services ({MyServices.length - visibleCount} more)
+            <button type='button' onClick={handleShowAll} target='_blank' className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Show All Services ({MyServices.length - visibleCount} More)
             </button>
             )}
           </div>

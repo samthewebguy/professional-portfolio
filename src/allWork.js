@@ -51,7 +51,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://uecompliance.com",
       },
     ],
@@ -98,7 +98,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://worldfertilityproject.com",
       },
     ],
@@ -140,7 +140,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://diventurai.golcons.com",
       },
     ],
@@ -179,11 +179,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://github.com/samthewebguy/vuejs-clone",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
         icon: faArrowUpRightFromSquare,
       },
@@ -221,11 +221,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://advice-generator-app-alpha-khaki.vercel.app/",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
         icon: faArrowUpRightFromSquare,
       },
@@ -259,11 +259,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://word-and-letter-counter-web-app.vercel.app",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/word-and-letter-counter",
         icon: faArrowUpRightFromSquare,
       },
@@ -306,11 +306,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://www.samthewebguy.com",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/professional-portfolio",
         icon: faArrowUpRightFromSquare,
       },
@@ -346,11 +346,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://centralhq-website-clone.vercel.app",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/centralhq-website-clone",
         icon: faArrowUpRightFromSquare,
       },
@@ -387,11 +387,11 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "live preview",
+        name: "Live Preview",
         to: "https://browser-extensions-manager-gamma.vercel.app",
       },
       {
-        name: "view code",
+        name: "View Code",
         to: "https://github.com/samthewebguy/browser-extensions-manager",
         icon: faArrowUpRightFromSquare,
       },

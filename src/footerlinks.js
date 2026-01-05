@@ -3,28 +3,28 @@ import { Link } from "react-router-dom"
 
 export const FooterLinks = [
     {
-        title: "contra",
-        link: "hire me",
+        title: "Contra",
+        link: "Hire me",
         to: "https://www.contra.com/samuelobazee",
     },
     {
-        title: "email",
-        link: "send an email",
+        title: "Email",
+        link: "Send an email",
         to: "mailto:reachsamthewebguy@gmail.com",
     },
     {
-        title: "github",
-        link: "view my code",
+        title: "Github",
+        link: "View my code",
         to: "https://www.github.com/samthewebguy",
     },
     {
-        title: "linkedin",
-        link: "connect with me",
+        title: "LinkedIn",
+        link: "Connect with me",
         to: "https://www.linkedin.com/in/samthewebguy",
     },
     {
-        title: "x (twitter)",
-        link: "let's connect",
+        title: "X (Twitter)",
+        link: "Let's connect",
         to: "https://www.x.com/technioo",
     }
 ];

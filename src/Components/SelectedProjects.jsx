@@ -35,11 +35,11 @@ const SelectedProjects = () => {
   return (
     <section className='w-full flex flex-col items-center justify-center mt-30 px-6'>
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-between gap-6'>
-            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>selected projects</h2>
+            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Projects</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
-                <button type='button' onClick={() => handleFilterChange('ALL')}  className={getButtonClass('ALL')}>all</button>
-                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>website development</button>
-                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>frontend development</button>
+                <button type='button' onClick={() => handleFilterChange('ALL')}  className={getButtonClass('ALL')}>All</button>
+                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Website Development</button>
+                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Development</button>
             </div>
         </div>
 
@@ -82,8 +82,8 @@ const SelectedProjects = () => {
 
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>
-          <Link to="/work" className='w-full bg-[#4B4B4B] border border-[#4B4B4B] py-3 px-6 rounded-full text-white text-lg font-medium transition-colors duration-300'>view more projects</Link>
-          <a href="https://github.com/samthewebguy" target='_blank' className='w-full border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>visit github profile</a>
+          <Link to="/work" className='w-full bg-[#4B4B4B] border border-[#4B4B4B] py-3 px-6 rounded-full text-white text-lg font-medium transition-colors duration-300'>View More Projects</Link>
+          <a href="https://github.com/samthewebguy" target='_blank' className='w-full border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Visit GitHub Profile</a>
         </div>
     </section>
   )

@@ -30,10 +30,10 @@ const Header = () => {
                   <img src={SiteLogo} alt="SAMTHEWEBGUY logo" />
               </a>
               <div className='DesktopNav hidden md:flex flex-row items-center justify-center gap-2 text-sm text-[#A1A1A1] font-normal'>
-                  <NavLink to="/work" className={({ isActive }) => `px-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>work</NavLink>
-                  <NavLink to="/services" className={({ isActive }) => `pl-2 pr-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>services</NavLink>
-                  <NavLink to="/about" className={({ isActive }) => `pl-2 pr-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>about</NavLink>
-                  <NavLink to="/stack" className={({ isActive }) => `pl-2 pr-2 border border-transparent hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>stack</NavLink>
+                  <NavLink to="/work" className={({ isActive }) => `px-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>Work</NavLink>
+                  <NavLink to="/services" className={({ isActive }) => `pl-2 pr-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>Services</NavLink>
+                  <NavLink to="/about" className={({ isActive }) => `pl-2 pr-4 border-r border-[#a1a1a1] hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>About</NavLink>
+                  <NavLink to="/stack" className={({ isActive }) => `pl-2 pr-2 border border-transparent hover:text-white leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-[#A1A1A1]"}`}>Stack</NavLink>
               </div>
               <div onClick={() => setMobileOpen(true)} className={`transition-transform duration-300 ease-in-out flex items-center justify-center md:hidden cursor-pointer ${mobileOpen ? "rotate-90" : "rotate-0"}`}>
                 <img src={HamburgerIcon} alt="Mobile menu hamburger icon" className='w-6 h-6 object-contain' />
