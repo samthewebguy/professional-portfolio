@@ -55,7 +55,7 @@ const SelectedProjects = () => {
               </div>
               <div className="flex flex-wrap items-start justify-start gap-2">
                 {project.results.map((result, index) => (
-                <div key={index} className="bg-[rgba(75,75,75,0.22)] px-4 py-2 rounded-sm flex flex-col items-center justify-center text-center">
+                <div key={index} className="bg-[rgba(75,75,75,0.22)] px-4 py-2 rounded-sm flex flex-col items-center justify-center text-left">
                     <span className="text-[#a1a1a1] text-sm font-normal">{result}</span>
                 </div>
                 ))}

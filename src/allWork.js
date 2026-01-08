@@ -180,7 +180,7 @@ export const AllProjects = [
     urls: [
       {
         name: "Live Preview",
-        to: "https://github.com/samthewebguy/vuejs-clone",
+        to: "https://vuejs-clone.vercel.app",
       },
       {
         name: "View Code",
