@@ -2,7 +2,8 @@ import React from 'react'
 import SamuelHeadShot from './assets/Samuel+Obazee+Headshot.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faHouse } from "@fortawesome/free-regular-svg-icons";
+import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
+import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 import SelectedProjects from './Components/SelectedProjects';
 import About from './Components/About';
 import Services from './Components/Services';
@@ -27,7 +28,6 @@ const Home = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center mt-4 gap-4'>
                     <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>I Build High-Converting, Revenue-Driving Websites for <span className='text-white'> Startups and Global Brands.</span></h1>
-                    <p className='text-md text-[#a1a1a1] font-normal leading-normal'>End-to-End Website Developer with 4+ years of experience building scalable, high-performance websites designed to <span className='text-white'>streamline user experience and drive business growth.</span></p>
                 </div>
                 <div className='w-full flex flex-row items-center justify-center gap-4 mt-8'>
                     <p className='mr-5 text-nowrap text-sm font-normal text-[#a1a1a1]'>I'M ALSO</p>
@@ -36,11 +36,15 @@ const Home = () => {
                 <div className='flex flex-col items-start justify-center mt-4 text-sm font-normal leading-normal'>
                     <div className='flex flex-row items-center justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faCode} />
-                        <p>A Frontend Developer — <span className='text-[#a1a1a1] italic'>focused on building efficient and user-centric web applications</span></p>
+                        <p>A Frontend Developer — <span className='text-[#a1a1a1] italic'>focused on building efficient and user-centric web applications.</span></p>
+                    </div>
+                    <div className='flex flex-row items-start justify-center gap-2 mb-2'>
+                        <FontAwesomeIcon icon={faBuilding} />
+                        <p>A systems-minded generalist — <span className='text-[#a1a1a1] italic'>working across no-code, integrations, automations and product workflows when projects require more than just a website.</span></p>
                     </div>
                     <div className='flex flex-row items-center justify-center gap-2 mb-2'>
-                        <FontAwesomeIcon icon={faHouse} />
-                        <p>Freelancing — <span className='text-[#a1a1a1] italic'>but open to new collaborations</span></p>
+                        <FontAwesomeIcon icon={faCalendarCheck} />
+                        <p>Freelancing — <span className='text-[#a1a1a1] italic'>but open to more collaborations.</span></p>
                     </div>
                 </div>
 

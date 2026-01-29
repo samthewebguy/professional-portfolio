@@ -32,8 +32,8 @@ export const MyServices = [
     alt: "SEO icon",
   },
    {
-    title: "Email Marketing & Workflow Automation Setup",
-    description: "Designing and implementing email marketing campaigns and automating workflows using tools like MailerLite, Zapier and more to streamline your marketing efforts.",
+    title: "Email Marketing & Workflow Automation",
+    description: "Designing and implementing email marketing campaigns and automating workflows using tools like Zapier, Airtable and more to streamline your marketing efforts.",
     icon: "/Services/automation.png",
     alt: "Email marketing and workflow automation icon",
   },
