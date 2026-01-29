@@ -52,7 +52,7 @@ const Footer = () => {
                 ))}
                 <div className='w-full flex flex-row items-center justify-between gap-2 border-t border-b border-[#4B4B4B80] py-4 mt-10'>
                     <p className='text-md text-white text-left font-medium leading-tight'>Portfolio design by</p>
-                    <a href="https://amirah.vzy.io" target='_blank'  rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>Amirah, Product Designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" /></a>
+                    <a href="https://amirah.vzy.io" target='_blank'  rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>Amirah, Product Designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-1" /></a>
                 </div>
             </div>
         </section>

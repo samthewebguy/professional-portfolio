@@ -24,7 +24,7 @@ const Services = () => {
       <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
           <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>What I Do Best</h2>
-          <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Let me handle the technical stuff</p>
+          <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Let me handle the technical stuff for you</p>
         </div>
         <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
           {servicesToShow.map((service, index) => (

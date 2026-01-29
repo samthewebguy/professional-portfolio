@@ -53,13 +53,6 @@ const SelectedProjects = () => {
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
                 <p className='text-[#A1A1A1] text-md font-normal leading-normal'>{project.description}</p>
               </div>
-              <div className="flex flex-wrap items-start justify-start gap-2">
-                {project.results.map((result, index) => (
-                <div key={index} className="w-fit bg-[rgba(75,75,75,0.22)] px-4 py-2 rounded-sm flex flex-col items-center justify-center text-left">
-                    <span className="text-[#a1a1a1] text-sm font-normal">{result}</span>
-                </div>
-                ))}
-              </div>
               <div className='w-full flex flex-col md:flex-row items-start justify-between mt-4 gap-6'>
                 <div className="flex items-center gap-2">
                   {project.tools.map((tool, index) => (
