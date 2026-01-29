@@ -34,7 +34,7 @@ const Home = () => {
                     <div className='bg-[rgba(75,75,75,0.33)] w-full h-px'></div>
                 </div>
                 <div className='flex flex-col items-start justify-center mt-4 text-sm font-normal leading-normal'>
-                    <div className='flex flex-row items-center justify-center gap-2 mb-2'>
+                    <div className='flex flex-row items-start justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faCode} />
                         <p>A Frontend Developer — <span className='text-[#a1a1a1] italic'>focused on building efficient and user-centric web applications.</span></p>
                     </div>
