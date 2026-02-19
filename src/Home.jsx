@@ -23,11 +23,11 @@ const Home = () => {
                     <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-15 h-20 object-cover rounded-sm' />
                     <div className='flex flex-col items-start justify-center text-left'>
                         <h4 className='text-lg text-white font-medium leading-normal'>Samuel Obazee</h4>
-                        <p className='text-md text-[#a1a1a1] font-normal leading-normal'>Website & Frontend Developer</p>
+                        <p className='text-md text-[#a1a1a1] font-normal leading-normal'>Web Developer & Systems Builder</p>
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-center mt-4 gap-4'>
-                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>I Build High-Converting, Revenue-Driving Websites for <span className='text-white'> Startups and Global Brands.</span></h1>
+                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>Websites Are Just the Beginning.<span className='text-white'> I Design the Systems That Power Online Growth.</span></h1>
                 </div>
                 <div className='w-full flex flex-row items-center justify-center gap-4 mt-8'>
                     <p className='mr-5 text-nowrap text-sm font-normal text-[#a1a1a1]'>I'M ALSO</p>
@@ -40,7 +40,7 @@ const Home = () => {
                     </div>
                     <div className='flex flex-row items-start justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faBuilding} />
-                        <p>A systems-minded generalist — <span className='text-[#a1a1a1] italic'>working across no-code, integrations, automations and product workflows when projects require more than just a website.</span></p>
+                        <p>A Systems-focused Builder — <span className='text-[#a1a1a1] italic'>connecting websites, payments, integrations, automations and workflows when projects require more than just a website.</span></p>
                     </div>
                     <div className='flex flex-row items-center justify-center gap-2 mb-2'>
                         <FontAwesomeIcon icon={faCalendarCheck} />

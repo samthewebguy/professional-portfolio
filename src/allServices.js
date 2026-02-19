@@ -2,14 +2,8 @@
 
 export const MyServices = [
   {
-    title: "Frontend Development",
-    description: "Building efficient, responsive, and user-centric web applications using modern frontend frameworks like React.js, and styling with TailwindCSS, CSS3, and more.",
-    icon: "/Services/frontend_development.png",
-    alt: "Frontend development icon",
-  },
-  {
-    title: "Custom Website Development",
-    description: "Creating high-converting, responsive, and scalable websites tailored to your brand — built from scratch or using platforms like Squarespace, Webflow, WordPress, Shopify, and more.",
+    title: "Conversion-Focused Website Development",
+    description: "Designing and building responsive, high-performing websites structured for growth, whether custom-built or on platforms like Squarespace, Shopify, Webflow, or WordPress.",
     icon: "/Services/responsive.png",
     alt: "Custom website development icon",
   },
@@ -19,28 +13,22 @@ export const MyServices = [
     icon: "/Services/sales-funnel.png",
     alt: "Landing pages and marketing funnels icon",
   },
-  {
-    title: "UI/UX Design",
-    description: "Intuitive and engaging designs focused on user experience, ensuring your website is not only visually appealing but also easy to navigate.",
-    icon: "/Services/ui_ux_design.png",
-    alt: "UI/UX design icon",
+    {
+    title: "E-commerce & Payment System Integration",
+    description: "Connecting your website to Stripe, Shopify, and payment systems with clean checkout flows and backend logic that supports revenue tracking and automation.",
+    icon: "/Services/frontend_development.png",
+    alt: "Frontend development icon",
   },
   {
-    title: "Search Engine Optimization (SEO)",
-    description: "Enhancing your website's visibility on search engines through on-page and technical SEO strategies to drive organic traffic and improve rankings.",
-    icon: "/Services/seo.png",
-    alt: "SEO icon",
-  },
-   {
-    title: "Email Marketing & Workflow Automation",
-    description: "Designing and implementing email marketing campaigns and automating workflows using tools like Zapier, Airtable and more to streamline your marketing efforts.",
+    title: "Automation & Workflow Setup",
+    description: "Designing automated workflows that connect forms, payments, CRM, and email systems, reducing manual work and improving operational efficiency.",
     icon: "/Services/automation.png",
     alt: "Email marketing and workflow automation icon",
   },
   {
-    title: "Ongoing Website Maintenance & Support",
-    description: "Ensuring your website stays updated, secure, and optimized with regular maintenance, backups, and performance checks.",
-    icon: "/Services/partnership.png",
-    alt: "Ongoing website maintenance and support icon",
+    title: "Digital Infrastructure & Ongoing Optimization",
+    description: "Ensuring your website and connected systems stay optimized, secure, and aligned with long-term growth through technical improvements and structured updates.",
+    icon: "/Services/seo.png",
+    alt: "SEO icon",
   },
 ];
