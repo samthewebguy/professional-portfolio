@@ -9,7 +9,7 @@ export const AllProjects = [
     alt: "UE Compliance website preview cover image",
     title: "United Energy Compliance",
     description: 
-    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties. They help property owners comply with local energy benchmarking laws while avoiding fines and administrative stress.",
+    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties.",
 
     results: [
       "Scalable system ready for growth",
@@ -63,7 +63,7 @@ export const AllProjects = [
     alt: "World Fertility Project website preview cover image",
     title: "World Fertility Project",
     description: 
-    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building, empowering the 1 in 6 facing infertility and expanding access to care for all.",
+    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building.",
 
     results: [
       "20.1k+ Organic impressions (3 months)",
@@ -110,7 +110,7 @@ export const AllProjects = [
     alt: "DiventurAI website preview cover image",
     title: "DiventurAI",
     description: 
-    "DiventurAI is a mobile-first platform that transforms any location into a personalized adventure. Designed for families and explorers, the app blends AI-powered activity recommendations, interactive games, and trip planning tools to create real-world, fun-filled experiences—anywhere, anytime.",
+    "DiventurAI is a mobile-first platform that transforms any location into a personalized adventure.",
 
     results: [
       "Highly optimized for app downloads",
@@ -237,7 +237,7 @@ export const AllProjects = [
     alt: "Word and Letter Counter preview cover image",
     title: "Word and Letter Counter",
     description:
-      "A simple web app that counts the number of words and letters in a given text input. It demonstrates proficiency in JavaScript for text manipulation and dynamic content updating.",
+      "A simple web app that counts the number of words and letters in a given text input.",
 
     results: [
       "Accurate word and letter counting",
@@ -276,7 +276,7 @@ export const AllProjects = [
     alt: "Professional Portfolio Website preview cover image",
     title: "Professional Portfolio Website",
     description:
-      "A custom-developed portfolio built with React.js and Tailwind CSS, designed to demonstrate my proficiency in high-performance frontend technologies. Highlights my expertise in responsive design, UI implementation, user experience, and full project lifecycle management.",
+      "A custom-developed portfolio built with React.js and Tailwind CSS, designed to demonstrate my proficiency in high-performance frontend technologies.",
 
     results: [
       "High-performance frontend",
@@ -322,7 +322,7 @@ export const AllProjects = [
     alt: "CentralHQ clone preview cover image",
     title: "CentralHQ Clone",
     description:
-      "A fully custom clone of the CentralHQ website, recreated as a personal project to improve my front-end development skills. This project highlights my ability to work implement responsive design principles, and create an engaging user interface using HTML, CSS, and JavaScript.",
+      "A fully custom clone of the CentralHQ website, recreated as a personal project to improve my front-end development skills.",
 
     results: [
       "100% Visual fidelity",

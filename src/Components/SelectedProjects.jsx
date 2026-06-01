@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const SelectedProjects = () => {
 
-  const [filter, setFilter] = useState('ALL');
+  const [filter, setFilter] = useState('WD');
 
   const handleFilterChange = (newFilter) => {
       setFilter(newFilter);
@@ -24,9 +24,9 @@ const SelectedProjects = () => {
 
 
   const getButtonClass = (buttonFilter) => {
-    const baseClasses = 'cursor-pointer transition-colors duration-300 px-4 py-1 rounded-full text-sm font-medium';
-    const inactiveClasses = 'text-[#a1a1a1] hover:text-white';
-    const activeClasses = 'text-white';
+    const baseClasses = 'cursor-pointer transition-colors duration-300 px-2 py-1 rounded-full text-sm font-normal border border-[#1b1b1b]';
+    const inactiveClasses = 'text-[#a1a1a1] hover:text-white hover:border-[#4b4b4b]';
+    const activeClasses = 'bg-black text-[#a1a1a1]';
 
     return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
     };
@@ -34,10 +34,9 @@ const SelectedProjects = () => {
 
   return (
     <section className='w-full flex flex-col items-center justify-center mt-30 px-6'>
-        <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-between gap-6'>
-            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Projects</h2>
+        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
+            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
-                <button type='button' onClick={() => handleFilterChange('ALL')}  className={getButtonClass('ALL')}>All</button>
                 <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Website Development</button>
                 <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Development</button>
             </div>
@@ -45,9 +44,9 @@ const SelectedProjects = () => {
 
         {/* Projects */}
 
-        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-16'>
+        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-4'>
           {filteredProjects.map ((project, index) => (
-            <div key={index} className='group w-full p-6 rounded-3xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
+            <div key={index} className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
               <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
               <div>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
@@ -61,9 +60,9 @@ const SelectedProjects = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 first-child:bg-white">
                   {project.urls.map((url, index) => (
-                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`opacity-80 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-[#a1a1a1] text-sm font-semibold ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
+                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`opacity-50 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-white text-sm font-md ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
                   {url.icon && (
-                    <FontAwesomeIcon icon={url.icon} className="h-3 w-3 ml-2" />
+                    <FontAwesomeIcon icon={url.icon} className="h-3 w-3 ml-1" />
                     )}
                     </a>
                   ))}
@@ -75,7 +74,7 @@ const SelectedProjects = () => {
 
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>
-          <Link to="/work" className='w-full bg-[#4B4B4B] border border-[#4B4B4B] py-3 px-6 rounded-full text-white text-lg font-medium transition-colors duration-300'>View More Projects</Link>
+          <Link to="/work" className='w-full bg-transparent border border-[#4B4B4B] py-3 px-6 rounded-full text-[#a1a1a1]  hover:text-white text-lg font-medium transition-colors duration-300'>View More Projects</Link>
           <a href="https://github.com/samthewebguy" target='_blank' className='w-full border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Visit GitHub Profile</a>
         </div>
     </section>

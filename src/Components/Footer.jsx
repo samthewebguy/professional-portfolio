@@ -45,14 +45,14 @@ const Footer = () => {
                 {FooterLinks.map((link, index) => (
                     <div key={index} className='w-full flex flex-row items-center justify-between text-center gap-2 border-t border-[#4B4B4B80] py-4'>
                     <p className='text-md text-white text-left font-medium leading-tight'>{link.title}</p>
-                    <a href={link.to} target='_blank' rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>
-                        {link.link} <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-2" />
+                    <a href={link.to} target='_blank' rel='noopener noreferrer' className='group text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>
+                        {link.link} <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-1 transition-transform duration-200 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </a>
                     </div>
                 ))}
                 <div className='w-full flex flex-row items-center justify-between gap-2 border-t border-b border-[#4B4B4B80] py-4 mt-10'>
                     <p className='text-md text-white text-left font-medium leading-tight'>Portfolio designer</p>
-                    <a href="https://amirah.vzy.io" target='_blank'  rel='noopener noreferrer' className='text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>Amirah, Product Designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-1" /></a>
+                    <a href="https://amirah.vzy.io" target='_blank'  rel='noopener noreferrer' className='group text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300'>Amirah, Product Designer <FontAwesomeIcon icon={faUpRightFromSquare} className="h-3 w-3 ml-1 transition-transform duration-200 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></a>
                 </div>
             </div>
         </section>

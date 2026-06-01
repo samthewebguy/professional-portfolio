@@ -1,6 +1,6 @@
 // projects.js
 
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = [
   {
@@ -9,7 +9,7 @@ export const Projects = [
     alt: "UE Compliance website preview cover image",
     title: "United Energy Compliance",
     description: 
-    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties. They help property owners comply with local energy benchmarking laws while avoiding fines and administrative stress.",
+    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties.",
 
     results: [
       "Scalable system ready for growth",
@@ -63,7 +63,7 @@ export const Projects = [
     alt: "World Fertility Project website preview cover image",
     title: "World Fertility Project",
     description: 
-    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building, empowering the 1 in 6 facing infertility and expanding access to care for all.",
+    "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building.",
 
     results: [
       "20.1k+ Organic impressions (3 months)",
@@ -143,7 +143,7 @@ export const Projects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
@@ -186,7 +186,7 @@ export const Projects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },

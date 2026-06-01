@@ -27,7 +27,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-center mt-4 gap-4'>
-                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>Websites Are Just the Beginning.<span className='text-white'> I Design the Systems That Power Online Growth.</span></h1>
+                    <h1 className='text-2xl md:text-3xl text-[#a1a1a1] font-medium leading-tight'>Translating Brand Positioning into<span className='text-white'> High-Converting Websites.</span></h1>
                 </div>
                 <div className='w-full flex flex-row items-center justify-center gap-4 mt-8'>
                     <p className='mr-5 text-nowrap text-sm font-normal text-[#a1a1a1]'>I'M ALSO</p>
