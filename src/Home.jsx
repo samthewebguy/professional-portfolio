@@ -62,9 +62,6 @@ const Home = () => {
             </div>
         </section>
 
-        {/* Video Animation */}
-
-
         {/* Selected Projects */}
 
         <SelectedProjects />
