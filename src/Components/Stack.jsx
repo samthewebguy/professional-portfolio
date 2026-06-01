@@ -24,8 +24,8 @@ const content = (
 
   return (
     <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-        <div className='w-full max-w-[680px] flex flex-row items-center justify-between text-left gap-6'>
-            <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>My Tech Stack</h2>
+        <div className='w-full max-w-[680px] flex flex-row items-center justify-between text-left gap-4'>
+            <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>My Tech Stack</h2>
             <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Tools I use to bring ideas to life</p>
         </div>
         <div className='bg-[#4B4B4B] w-full max-w-[680px] grid grid-cols-3 md:grid-cols-5 items-stretch justify-start mt-10 gap-px'>

@@ -19,8 +19,8 @@ const Footer = () => {
   return (
     <footer className='w-full flex flex-col items-center justify-center mt-40 px-6 mb-20'>
         <section className='w-full max-w-[680px] flex flex-col items-center justify-center gap-6'>
-            <div className='w-full flex flex-row items-center justify-between gap-6'>
-                <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>Let's Work Together</h2>
+            <div className='w-full flex flex-row items-center justify-between gap-4'>
+                <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Let's Work Together</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Book a call, and I'll take care of the rest</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
