@@ -33,17 +33,17 @@ const AllWork = () => {
   return (
 
         <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-        <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-between gap-6'>
+        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
             <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
-                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Website Development</button>
-                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Development</button>
+                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
+                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Dev</button>
             </div>
         </div>
 
         {/* Projects */}
 
-        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-30 md:mt-20 gap-4'>
+        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-20 gap-4'>
           {filteredProjects.map ((project, index) => (
             <div key={index} className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
               <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>

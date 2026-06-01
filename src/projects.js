@@ -3,60 +3,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = [
-  {
-    id: "WD02",
-    image: "/Projects/uecompliance.png",
-    alt: "UE Compliance website preview cover image",
-    title: "United Energy Compliance",
-    description: 
-    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties.",
-
-    results: [
-      "Scalable system ready for growth",
-      "Automated client intake and communication",
-      "Seamless & guided user experience",
-      "Reduced manual administrative work",
-    ],
-
-    tools: [
-      {
-        name: "Carrd",
-        icon: "/Stacks/Carrd.png",
-      },
-      {
-        name: "CSS3",
-        icon: "/Stacks/CSS3.png",
-      },
-      {
-        name: "JavaScript",
-        icon: "/Stacks/JavaScript.png",
-      },
-      {
-        name: "Canva",
-        icon: "/Stacks/Canva.png",
-      },
-    {
-        name: "MailerLite",
-        icon: "/Stacks/MailerLite.webp",
-      },
-    {
-        name: "Zapier",
-        icon: "/Stacks/Zapier.svg",
-      },
-      {
-        name: "PostGrid",
-        icon: "/Stacks/PostGrid.png",
-      },
-    ],
-
-    urls: [
-      {
-        name: "Live Preview",
-        to: "https://uecompliance.com",
-      },
-    ],
-  },
-
+  
   {
     id: "WD01",
     image: "/Projects/WFP.png",
@@ -105,7 +52,7 @@ export const Projects = [
   },
 
   {
-    id: "FD02",
+    id: "FD01",
     image: "/Projects/Vue js.png",
     alt: "Vue.js website clone preview cover image",
     title: "Vue.js Clone",
@@ -149,7 +96,7 @@ export const Projects = [
   },
 
     {
-    id: "FD03",
+    id: "FD02",
     image: "/Projects/AdviceGeneratorApp.gif",
     alt: "Advice Generator App preview cover image",
     title: "Advice Generator App",

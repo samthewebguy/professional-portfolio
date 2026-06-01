@@ -1,61 +1,8 @@
 // allWork.js
 
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const AllProjects = [
-  {
-    id: "WD02",
-    image: "/Projects/uecompliance.png",
-    alt: "UE Compliance website preview cover image",
-    title: "United Energy Compliance",
-    description: 
-    "United Energy Management (UEM) is a building energy benchmarking company serving multi-family, retail, and commercial properties.",
-
-    results: [
-      "Scalable system ready for growth",
-      "Automated client intake and communication",
-      "Seamless & guided user experience",
-      "Reduced manual administrative work",
-    ],
-
-    tools: [
-      {
-        name: "Carrd",
-        icon: "/Stacks/Carrd.png",
-      },
-      {
-        name: "CSS3",
-        icon: "/Stacks/CSS3.png",
-      },
-      {
-        name: "JavaScript",
-        icon: "/Stacks/JavaScript.png",
-      },
-      {
-        name: "Canva",
-        icon: "/Stacks/Canva.png",
-      },
-    {
-        name: "MailerLite",
-        icon: "/Stacks/MailerLite.webp",
-      },
-    {
-        name: "Zapier",
-        icon: "/Stacks/Zapier.svg",
-      },
-      {
-        name: "PostGrid",
-        icon: "/Stacks/PostGrid.png",
-      },
-    ],
-
-    urls: [
-      {
-        name: "Live Preview",
-        to: "https://uecompliance.com",
-      },
-    ],
-  },
 
   {
     id: "WD01",
@@ -105,7 +52,7 @@ export const AllProjects = [
   },
 
     {
-    id: "WD03",
+    id: "WD02",
     image: "/Projects/DiventurAI.png",
     alt: "DiventurAI website preview cover image",
     title: "DiventurAI",
@@ -185,12 +132,12 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
   {
-    id: "FD02",
+    id: "FD03",
     image: "/Projects/AdviceGeneratorApp.gif",
     alt: "Advice Generator App preview cover image",
     title: "Advice Generator App",
@@ -227,7 +174,7 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
@@ -265,13 +212,13 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/word-and-letter-counter",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
 
   {
-    id: "FD03",
+    id: "FD02",
     image: "/Projects/Portfolio.png",
     alt: "Professional Portfolio Website preview cover image",
     title: "Professional Portfolio Website",
@@ -312,7 +259,7 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/professional-portfolio",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
@@ -352,7 +299,7 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/centralhq-website-clone",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },
@@ -393,7 +340,7 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/browser-extensions-manager",
-        icon: faArrowUpRightFromSquare,
+        icon: faArrowRight,
       },
     ],
   },

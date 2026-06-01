@@ -37,8 +37,8 @@ const SelectedProjects = () => {
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
             <h2 className='text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
-                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Website Development</button>
-                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Development</button>
+                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
+                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Dev</button>
             </div>
         </div>
 
