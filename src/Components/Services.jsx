@@ -22,7 +22,7 @@ const Services = () => {
   return (
     <>
       <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
+        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-8'>
           <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>What I Do Best</h2>
           <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Let me handle the technical stuff for you</p>
         </div>
