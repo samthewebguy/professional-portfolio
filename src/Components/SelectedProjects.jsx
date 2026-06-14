@@ -97,8 +97,15 @@ const SelectedProjects = () => {
         
         <div ref={cardsContainerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-10'>
           {filteredProjects.map ((project, index) => (
-            
-            <div key={project.id || index} className='selected-card-column group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
+            <div 
+              key={project.id || index} 
+              className="w-full sticky top-[20%] origin-top transition-transform duration-200"
+              style={{ 
+              zIndex: index + 1,
+              transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`
+              }}
+            >
+            <div className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
               <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
               <div>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
@@ -121,8 +128,9 @@ const SelectedProjects = () => {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>

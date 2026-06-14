@@ -4,10 +4,11 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
+import Testimonial from './Testimonial';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+const About = ({ showTestimonial = false }) => {
 
     const aboutSectionRef = useRef();
 
@@ -54,6 +55,7 @@ const About = () => {
   }, { scope: aboutSectionRef });
 
     const content = (
+
         <>
             <span className='px-4 border-r border-l border-[#4b4b4b]'>Attention to Details</span>
             <span className='px-4 border-r border-l border-[#4b4b4b]'>Problem-Solving</span>
@@ -70,6 +72,7 @@ const About = () => {
     );
 
   return (
+    <>
         <section ref={aboutSectionRef} className='w-full flex flex-col items-center justify-center mt-40 px-6'>
             <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-8'>
                 <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>About Me</h2>
@@ -147,6 +150,11 @@ const About = () => {
                 </div>
             </div>
         </section>
+
+        {/* Testimonial */}
+
+        {showTestimonial && <Testimonial />}
+    </>
   )
 }
 

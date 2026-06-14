@@ -67,16 +67,16 @@ const Testimonial = () => {
         </div>
 
         
-{/* Dynamically switch between standard flex/grid for initial view and masonry columns for expanded view */}
-<div 
-  ref={testimonialsContainerRef} 
-  className={`w-full max-w-[680px] mt-10 gap-6 ${
-    visibleCount === INITIAL_TESTIMONIAL_COUNT 
+      {/* Dynamically switch between standard flex/grid for initial view and masonry columns for expanded view */}
+      <div 
+      ref={testimonialsContainerRef} 
+      className={`w-full max-w-[680px] mt-10 gap-6 ${
+      visibleCount === INITIAL_TESTIMONIAL_COUNT 
       ? 'grid grid-cols-1 sm:grid-cols-2 items-start' 
-      : 'columns-1 sm:columns-2 [column-fill:_balance]'
-  }`}
->
-    {testimonialToShow.map((testimonial, index) => (
+      : 'columns-1 sm:columns-2 [column-fill:balance]'
+      }`}
+      >
+      {testimonialToShow.map((testimonial, index) => (
         <div 
           key={index} 
           

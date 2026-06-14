@@ -55,9 +55,9 @@ function App() {
         <WorldTime />
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/work' element={<Work />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/work' element={<Work showTestimonial={true} />} />
+          <Route path='/about' element={<About showTestimonial={true} />} />
+          <Route path='/services' element={<Services showTestimonial={true} />} />
           <Route path='/stack' element={<Stack />} />
         </Routes>
       </main>

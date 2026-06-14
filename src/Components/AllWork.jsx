@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { AllProjects } from '../allWork'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Testimonial from './Testimonial';
 
 // 1. Import GSAP hooks specifically for this component
 import { useGSAP } from '@gsap/react';
@@ -72,6 +73,7 @@ const AllWork = () => {
   };
 
   return (
+    <>
     <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
             <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
@@ -85,8 +87,17 @@ const AllWork = () => {
         
         <div ref={containerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-20 gap-10'>
           {filteredProjects.map ((project, index) => (
+
+            <div 
+              key={project.id || index} 
+              className="w-full sticky top-[20%] origin-top transition-transform duration-200"
+              style={{ 
+              zIndex: index + 1,
+              transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`
+              }}
+            >
             
-            <div key={project.id || index} className='project-card-column group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
+            <div className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
               <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
               <div>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
@@ -109,9 +120,14 @@ const AllWork = () => {
                 </div>
               </div>
             </div>
+          </div>
           ))}
         </div>
     </section>
+    {/* Testimonial */}
+
+    <Testimonial />
+    </>
   )
 }
 

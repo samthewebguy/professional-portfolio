@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { MyServices } from '../allServices'
+import Testimonial from './Testimonial'
 
 // 1. Import the necessary GSAP utilities
 import { useGSAP } from '@gsap/react';
@@ -10,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const INITIAL_SERVICE_COUNT = 3;
 
-const Services = () => {
+const Services = ({showTestimonial}) => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_SERVICE_COUNT);
   
   // 2. Setup a container ref to scope the animations
@@ -89,6 +90,10 @@ const Services = () => {
           )}
         </div>
       </section>
+
+      {/* Testimonial */}
+
+      {showTestimonial && <Testimonial />}
     </>
   )
 }
