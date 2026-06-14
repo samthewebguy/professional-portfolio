@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
                 <p className='text-lg text-white text-left font-medium leading-tight'>Ready to level up your website?</p>
-                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>I'm open to freelance and long-term projects opportunities.</p>
+                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>Trusted by 30+ startups and global brands to architect high-performance, conversion-focused websites.</p>
             </div>
 
             {/* Cal Embed */}

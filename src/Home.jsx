@@ -144,10 +144,6 @@ const Home = () => {
 
         <SelectedProjects />
 
-        {/* About */}
-
-        <About />
-
         {/* Services */}
 
         <Services />
