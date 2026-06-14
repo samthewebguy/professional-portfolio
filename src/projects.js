@@ -45,7 +45,7 @@ export const Projects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://worldfertilityproject.com",
       },
     ],
@@ -84,7 +84,7 @@ export const Projects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://vuejs-website-clone-project.vercel.app",
       },
       {
@@ -127,7 +127,7 @@ export const Projects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://advice-generator-app-alpha-khaki.vercel.app/",
       },
       {

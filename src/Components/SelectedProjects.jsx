@@ -73,10 +73,20 @@ const SelectedProjects = () => {
     return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
     };
 
+    const handleScrollToTestimonials = (e) => {
+    e.preventDefault();
+  
+  const target = document.getElementById('testimonial');
+
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   return (
     <section className='w-full flex flex-col items-center justify-center mt-30 px-6'>
         <div className='hero-fade-in w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
-            <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
+            <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Completed Works</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
                 <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
                 <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Code</button>
@@ -117,7 +127,13 @@ const SelectedProjects = () => {
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>
           <Link to="/work" className='w-full bg-transparent border border-[#4B4B4B] py-3 px-6 rounded-full text-[#a1a1a1]  hover:text-white text-lg font-medium transition-colors duration-300'>View More Projects</Link>
-          <a href="https://github.com/samthewebguy" target='_blank' className='w-full border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Visit GitHub Profile</a>
+          <button 
+      type="button"
+      onClick={handleScrollToTestimonials}
+      className='w-full cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'
+    >
+      What Our Clients Say
+    </button>
         </div>
     </section>
   )

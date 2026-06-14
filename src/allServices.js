@@ -2,7 +2,7 @@
 
 export const MyServices = [
   {
-    title: "Conversion-Focused Website Development",
+    title: "Website Development",
     description: "Designing and building responsive, high-performing websites structured for growth, whether custom-built or on platforms like Squarespace, Shopify, Webflow, or WordPress.",
     icon: "/Services/responsive.png",
     alt: "Custom website development icon",

@@ -9,18 +9,18 @@ export const Testimonials = [
         alt: "Portrait of Aldo Andika, Founder, Lunar Light Creative",
     },
     {
-        statement: "I'm genuinely thrilled with the outcome and couldn't be happier. If you need someone trustworthy, talented, and reliable for a website migration or redesign, hire Sam. You won't regret it!",
-        client: "Matt Xavier",
-        title: "Founder, Integrated Psychedelics",
-        image: "/Testimonials/Matt-Xavier.webp",
-        alt: "Portrait of Matt Xavier, Founder, Integrated Psychedelics",
-    },
-    {
         statement: "Samuel was an absolute pleasure to work with. He has a real eye for design and built a beautiful, functional website that exceeded my expectations. His communication was clear and consistent throughout the entire process, which made everything run smoothly. I strongly recommend Samuel for any web design project.",
         client: "Matthew McCrimmon",
         title: "Founder, BrightSwap",
         image: "/Testimonials/Matthew-McCrimmon.jpg",
         alt: "Portrait of Matthew McCrimmon, Founder of BrightSwap",
+    },
+    {
+        statement: "I'm genuinely thrilled with the outcome and couldn't be happier. If you need someone trustworthy, talented, and reliable for a website migration or redesign, hire Sam. You won't regret it!",
+        client: "Matt Xavier",
+        title: "Founder, Integrated Psychedelics",
+        image: "/Testimonials/Matt-Xavier.webp",
+        alt: "Portrait of Matt Xavier, Founder, Integrated Psychedelics",
     },
     {
         statement: "Samuel is always quick to start and finish the job and always completes the full job requested to a high standard. Have and will reuse Samuel again when I need any of his services.",

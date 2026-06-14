@@ -60,28 +60,44 @@ const Testimonial = () => {
   }, { dependencies: [visibleCount], scope: testimonialsContainerRef });
 
   return (
-    <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
+    <section id="testimonial" className='w-full flex flex-col items-center justify-center mt-40 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
             <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>What Founders Have To Say</h2>
-            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Fortunate to work with amazing people</p>
+            <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Fortunate to work with amazing brands</p>
         </div>
 
         
-        <div ref={testimonialsContainerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
-                {testimonialToShow.map((testimonial, index) => (
-                   
-                    <div key={index} className='testimonial-card-item group bg-[#4B4B4B1C] w-full flex flex-col items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
-                        <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>"{testimonial.statement}"</p>
-                        <div className='flex flex-row items-start justify-center text-left gap-4'>
-                            <img src={testimonial.image} alt={testimonial.alt} className='w-12 h-12 object-cover object-center rounded-full shadow-md shadow-[#000000]/20' />
-                            <div className='flex flex-col items-start justify-center text-left gap-1'>
-                                <p className='text-md text-white font-medium leading-tight'>{testimonial.client}</p>
-                                <span className='text-sm text-[#a1a1a1] text-left font-normal leading-normal'>{testimonial.title}</span>
-                            </div>
-                        </div>
+{/* Dynamically switch between standard flex/grid for initial view and masonry columns for expanded view */}
+<div 
+  ref={testimonialsContainerRef} 
+  className={`w-full max-w-[680px] mt-10 gap-6 ${
+    visibleCount === INITIAL_TESTIMONIAL_COUNT 
+      ? 'grid grid-cols-1 sm:grid-cols-2 items-start' 
+      : 'columns-1 sm:columns-2 [column-fill:_balance]'
+  }`}
+>
+    {testimonialToShow.map((testimonial, index) => (
+        <div 
+          key={index} 
+          
+          className={`w-full break-inside-avoid ${
+            visibleCount === INITIAL_TESTIMONIAL_COUNT ? '' : 'inline-block pb-6'
+          }`}
+        >
+            
+            <div className='group bg-[#4B4B4B1C] w-full flex flex-col items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
+                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>"{testimonial.statement}"</p>
+                <div className='flex flex-row items-start justify-center text-left gap-4'>
+                    <img src={testimonial.image} alt={testimonial.alt} className='w-12 h-12 object-cover object-center rounded-full shadow-md shadow-[#000000]/20' />
+                    <div className='flex flex-col items-start justify-center text-left gap-1'>
+                        <p className='text-md text-white font-medium leading-tight'>{testimonial.client}</p>
+                        <span className='text-sm text-[#a1a1a1] text-left font-normal leading-normal'>{testimonial.title}</span>
                     </div>
-                ))}
+                </div>
+            </div>
         </div>
+    ))}
+</div>
 
         {/* Show More CTA */}
         <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>

@@ -21,11 +21,11 @@ const Footer = () => {
         <section className='w-full max-w-[680px] flex flex-col items-center justify-center gap-6'>
             <div className='w-full flex flex-row items-center justify-between gap-4'>
                 <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Let's Work Together</h2>
-                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Book a call, and I'll take care of the rest</p>
+                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Available to take on new projects!</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
-                <p className='text-lg text-white text-left font-medium leading-tight'>Have an idea or project in mind?</p>
-                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>I'm open to freelance and long-term collaboration opportunities.</p>
+                <p className='text-lg text-white text-left font-medium leading-tight'>Ready to level up your website?</p>
+                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>I'm open to freelance and long-term projects opportunities.</p>
             </div>
 
             {/* Cal Embed */}
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
         </section>
             <div className='w-full max-w-[690px] flex items-center justify-center text-center mt-10'>
-            <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>&copy; Samthewebguy {currentYear}. All rights reserved | Portfolio built by Samuel Obazee </p>
+            <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>&copy; Samthewebguy {currentYear}. All rights reserved | Website Development by Samuel Obazee </p>
         </div>
     </footer>
   )

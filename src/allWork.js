@@ -45,7 +45,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://worldfertilityproject.com",
       },
     ],
@@ -87,7 +87,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://diventurai.golcons.com",
       },
     ],
@@ -126,7 +126,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://vuejs-clone.vercel.app",
       },
       {
@@ -168,7 +168,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://advice-generator-app-alpha-khaki.vercel.app/",
       },
       {
@@ -206,7 +206,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://word-and-letter-counter-web-app.vercel.app",
       },
       {
@@ -253,7 +253,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://www.samthewebguy.com",
       },
       {
@@ -293,7 +293,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://centralhq-website-clone.vercel.app",
       },
       {
@@ -334,7 +334,7 @@ export const AllProjects = [
 
     urls: [
       {
-        name: "Live Preview",
+        name: "View Project",
         to: "https://browser-extensions-manager-gamma.vercel.app",
       },
       {
