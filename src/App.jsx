@@ -13,6 +13,7 @@ import Services from './Components/Services'
 import Stack from './Components/Stack'
 import Footer from './Components/Footer'
 import WorldTime from './Components/WorldTime'
+import CustomCursor from './Components/CustomCursor';
 
 // 1. Register the ScrollTrigger plugin with GSAP globally
 gsap.registerPlugin(ScrollTrigger);
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <>
+      <CustomCursor />
       <Header/>
       <main>
         <FloatingBadge/>

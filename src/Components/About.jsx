@@ -89,23 +89,15 @@ const About = ({ showTestimonial = false }) => {
                          ))}
                     </h3>
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    My tech journey truly started in 2021 when I built my first website using Groove Funnel. 
-                    Since then, I've worked with different CMS and website builder platforms, creating 
-                    functional, revenue-driven websites. I've always chased what makes me curious and 
-                    what feels possible. That same feeling led me into frontend development, where I realized I 
-                    could expand my capacity in the web space. Now I write code and build functional, efficient 
-                    web applications.
+                    My tech journey truly started in 2021 when I built my first website using Groove Funnels. Since then, I've specialized in engineering high-performance, revenue-driven websites for global clients, scaling brand architectures across Shopify, Squarespace, Webflow, and custom frameworks. Driven by curiosity and a relentless focus on what's possible, I expanded into frontend development to push the boundaries of what a website can do. Today, I write clean, custom code to build highly functional, conversion-focused web applications.
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    Both paths have allowed me to work with startups and global brands, helping them 
-                    bring ideas to life with flexibility and practical solutions. With me, your website performs 
-                    efficiently and works hard for your business.
+                    Both paths have allowed me to partner with startups and global brands to handle technical complexity and bring their ideas to life. With me, your website performs flawlessly and works hard for your business.
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    When I'm not working, you'll find me brainstorming, scrolling through X (formerly 
-                    Twitter) to share my thoughts, catching up on the latest news, or usually having a good laugh. And lastly, Chelsea FC for life!
+                    When I'm not working, you'll usually find me brainstorming new ideas, sharing thoughts on X, or catching up on tech trends. And of course, it's Chelsea FC for life! For me, building for the web isn't just about syntax; it's about delivering systems that move businesses forward.
                     </p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
                         <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Book a Strategy Call</a>

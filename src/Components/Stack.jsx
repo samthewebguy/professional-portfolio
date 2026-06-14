@@ -30,7 +30,7 @@ const content = (
         </div>
         <div className='bg-[#4B4B4B] w-full max-w-[680px] grid grid-cols-3 md:grid-cols-5 items-stretch justify-start mt-10 gap-px'>
             {Stacks.map((stack, index) => (
-                <div key={index} className='bg-[#121212] hover:bg-[#121212de] flex flex-col items-center justify-center gap-4 px-4 py-4 transition-colors duration-300'>
+                <div key={index} className='bg-[#121212] hover:bg-[#121212cd] flex flex-col items-center justify-center gap-4 px-4 py-4 transition-colors duration-300'>
                     <img src={stack.image} alt={stack.alt} className='w-8 h-8 object-contain object-center' />
                     <span className='text-sm text-[#a1a1a1] font-normal text-center leading-tight'>{stack.name}</span>
                 </div>
