@@ -16,7 +16,7 @@ import { gsap } from 'gsap';
 
 const Home = () => {
 
-    const heroRef = useRef();
+    const pageRef = useRef();
 
   useGSAP(() => {
     const titleEl = document.querySelector('.scramble-title');
@@ -37,7 +37,7 @@ const Home = () => {
       y: 15,
       duration: 1,
       stagger: 0.15,
-      ease: 'power2.out'
+      ease: 'power4.out'
     });
 
     // The custom scramble text sequence loop
@@ -81,14 +81,14 @@ const Home = () => {
       ease: 'power2.out'
     }, "-=0.2");
 
-  }, { scope: heroRef });
+  }, { scope: pageRef });
 
   return (
-    <>
+    <div ref={pageRef}>
 
         {/* Hero Section */}
 
-        <section ref={heroRef} className='w-full flex flex-col items-center justify-center mt-44 px-6'>
+        <section className='w-full flex flex-col items-center justify-center mt-44 px-6'>
             <div className='w-full max-w-[680px] flex flex-col items-start justify-center'>
                 <div className='hero-fade-in flex flex-row items-center justify-center gap-4'>
                     <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-15 h-20 object-cover rounded-sm' />
@@ -159,7 +159,7 @@ const Home = () => {
         {/* Testimonial */}
 
         <Testimonial />
-    </>
+    </div>
   )
 }
 

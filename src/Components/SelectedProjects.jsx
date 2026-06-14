@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Projects } from '../projects'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
+// 1. Import GSAP hooks and registration
+import { useGSAP } from '@gsap/react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const SelectedProjects = () => {
 
   const [filter, setFilter] = useState('WD');
+  
+  // 2. Create the wrapper ref for component scoping
+  const cardsContainerRef = useRef();
 
   const handleFilterChange = (newFilter) => {
       setFilter(newFilter);
@@ -17,11 +27,43 @@ const SelectedProjects = () => {
     }
       return project.id.startsWith(filter);
   })
-
    .sort((a, b) => {
     return a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' });
   });
 
+  // 3. Initialize the scroll-triggered animation loop watching the filter state
+  useGSAP(() => {
+    const selectedCards = gsap.utils.toArray('.selected-card-column');
+    
+    
+    ScrollTrigger.getAll().forEach(t => {
+      if (t.trigger && t.trigger.classList.contains('selected-card-column')) {
+        t.kill();
+      }
+    });
+
+   
+    selectedCards.forEach((card) => {
+      gsap.fromTo(card, 
+        { 
+          opacity: 0, 
+          y: 40
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: 'power4.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 88%',
+            toggleActions: 'play none none none',
+          }
+        }
+      );
+    });
+
+  }, { dependencies: [filter], scope: cardsContainerRef });
 
   const getButtonClass = (buttonFilter) => {
     const baseClasses = 'cursor-pointer transition-colors duration-300 px-2 py-1 rounded-full text-sm font-normal border border-[#1b1b1b]';
@@ -31,22 +73,22 @@ const SelectedProjects = () => {
     return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
     };
 
-
   return (
     <section className='w-full flex flex-col items-center justify-center mt-30 px-6'>
-        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
+        <div className='hero-fade-in w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
             <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Selected Work</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
                 <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
-                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Frontend Dev</button>
+                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Code</button>
             </div>
         </div>
 
-        {/* Projects */}
-
-        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-4'>
+        {/* Projects Grid Container */}
+        
+        <div ref={cardsContainerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-10'>
           {filteredProjects.map ((project, index) => (
-            <div key={index} className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
+            
+            <div key={project.id || index} className='selected-card-column group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#4B4B4B1C] border border-[#4B4B4B80]' >
               <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
               <div>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
