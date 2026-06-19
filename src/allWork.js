@@ -1,7 +1,5 @@
 // allWork.js
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 export const AllProjects = [
 
   {
@@ -132,7 +130,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
-        icon: faArrowRight,
       },
     ],
   },
@@ -174,7 +171,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
-        icon: faArrowRight,
       },
     ],
   },
@@ -212,7 +208,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/word-and-letter-counter",
-        icon: faArrowRight,
       },
     ],
   },
@@ -259,7 +254,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/professional-portfolio",
-        icon: faArrowRight,
       },
     ],
   },
@@ -299,7 +293,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/centralhq-website-clone",
-        icon: faArrowRight,
       },
     ],
   },
@@ -340,7 +333,6 @@ export const AllProjects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/browser-extensions-manager",
-        icon: faArrowRight,
       },
     ],
   },

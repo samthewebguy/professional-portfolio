@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { AllProjects } from '../allWork'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Testimonial from './Testimonial';
 
 // 1. Import GSAP hooks specifically for this component
@@ -90,7 +89,7 @@ const AllWork = () => {
 
             <div 
               key={project.id || index} 
-              className="w-full sticky top-[20%] origin-top transition-transform duration-200"
+              className="w-full sticky top-[18%] md:top-[15%] origin-top transition-transform duration-200"
               style={{ 
               zIndex: index + 1,
               transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`
@@ -111,10 +110,15 @@ const AllWork = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 first-child:bg-white">
                   {project.urls.map((url, index) => (
-                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`opacity-50 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-white text-sm font-md ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
-                  {url.icon && (
-                    <FontAwesomeIcon icon={url.icon} className="h-3 w-3 ml-1" />
-                    )}
+                  <a key={index} href={url.to} target="_blank" rel="noopener noreferrer" className={`group/btn opacity-70 hover:opacity-100 transition duration-300 flex items-center gap-1 px-4 py-2 rounded-full text-white text-sm font-md ${index === 0 ? 'bg-[#4B4B4B1C] border border-[#4b4b4b]' : ''}`}>{url.name}
+                    <svg 
+                      viewBox="0 0 17 17" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-2 w-2 ml-2 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                    >
+                    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                    </svg>
                     </a>
                   ))}
                 </div>

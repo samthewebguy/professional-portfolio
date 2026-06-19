@@ -1,11 +1,9 @@
 // projects.js
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 export const Projects = [
   
   {
-    id: "WD01",
+    id: "WD02",
     image: "/Projects/WFP.png",
     alt: "World Fertility Project website preview cover image",
     title: "World Fertility Project",
@@ -52,6 +50,49 @@ export const Projects = [
   },
 
   {
+    id: "WD01",
+    image: "/Projects/beneaththegloss-mockup.webp",
+    alt: "Beneath The Gloss website preview cover image",
+    title: "Beneath The Gloss",
+    description: 
+    "Beneath The Gloss is a modern approach to growth, guiding the people and organizations navigating the convergence of business, brand, and well-being through consulting, coaching, and speaking. It's where strategy meets soul.",
+
+    results: [
+      "20.1k+ Organic impressions (3 months)",
+      "8.1 Average Google search position",
+      "Global-scale functional design",
+      "Google first-page ranking",
+      "Custom technical implementation",
+    ],
+
+    tools: [
+      {
+        name: "Squarespace",
+        icon: "/Stacks/Squarespace.png",
+      },
+      {
+        name: "Figma",
+        icon: "/Stacks/Figma.png",
+      },
+      {
+        name: "CSS3",
+        icon: "/Stacks/CSS3.png",
+      },
+      {
+        name: "JavaScript",
+        icon: "/Stacks/JavaScript.png",
+      },
+    ],
+
+    urls: [
+      {
+        name: "View Project",
+        to: "https://www.beneaththegloss.com",
+      },
+    ],
+  },
+
+  {
     id: "FD01",
     image: "/Projects/Vue js.png",
     alt: "Vue.js website clone preview cover image",
@@ -90,7 +131,6 @@ export const Projects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/vuejs-clone",
-        icon: faArrowRight,
       },
     ],
   },
@@ -133,7 +173,6 @@ export const Projects = [
       {
         name: "View Code",
         to: "https://github.com/samthewebguy/advice-generator-app",
-        icon: faArrowRight,
       },
     ],
   },
