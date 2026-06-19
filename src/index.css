@@ -25,25 +25,16 @@
   scroll-behavior: smooth;
 }
 
-  .project-image {
-  transform:
-    translate3d(0, 0, 0)
-    scale3d(0.98, 0.98, 0.98)
-    rotateX(4deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg, 0deg);
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+.project-image {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
 }
 
+
+
 .project-image:hover {
-  transform:
-    translate3d(0px, 0px, 0px)
-    scale3d(1, 1, 1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg, 0deg);
+  transform: translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98);
 }
 
 
