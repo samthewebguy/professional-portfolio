@@ -99,7 +99,7 @@ const SelectedProjects = () => {
           {filteredProjects.map ((project, index) => (
             <div 
               key={project.id || index} 
-              className="w-full sticky top-[18%] md:top-[15%] origin-top transition-transform duration-200"
+              className="w-full sticky top-[16%] md:top-[15%] origin-top transition-transform duration-200"
               style={{ 
               zIndex: index + 1,
               transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`
@@ -140,13 +140,31 @@ const SelectedProjects = () => {
 
         {/* CTA Buttons */}
         <div className='w-full max-w-[680px] flex flex-col md:flex-row items-center justify-center gap-6 mt-20 text-center'>
-          <Link to="/work" className='w-full bg-transparent border border-[#4B4B4B] py-3 px-6 rounded-full text-[#a1a1a1]  hover:text-white text-lg font-medium transition-colors duration-300'>View More Projects</Link>
+          <Link to="/work" className='group/btn w-full bg-transparent border border-[#4B4B4B] py-3 px-6 rounded-full text-[#a1a1a1]  hover:text-white text-md font-medium transition-colors duration-300'>View More Projects
+          <svg 
+                      viewBox="0 0 17 17" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="inline-block h-3 w-3 ml-3 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                    >
+                    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                    </svg>
+          </Link>
           <button 
       type="button"
       onClick={handleScrollToTestimonials}
-      className='w-full cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'
+      className='group/btn w-full cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition duration-300'
     >
       What Our Clients Say
+
+      <svg 
+                      viewBox="0 0 17 17" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="inline-block h-3 w-3 ml-3 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                    >
+                    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                    </svg>
     </button>
         </div>
     </section>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import SiteLogo from '../assets/Site Logo/Samthewebguy_White_TP.svg'
+import SiteLogo from '../assets/Site Logo/Samthewebguy.png'
 import HamburgerIcon from '../assets/Mobile+Hamburger+Icon.png'
 import MobileNav from './MobileNav'
 

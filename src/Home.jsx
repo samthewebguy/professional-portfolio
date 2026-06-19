@@ -131,11 +131,20 @@ const Home = () => {
                 <div className='hero-fade-in flex flex-col items-start justify-center mt-10 gap-2'>
                     <div className='flex flex-row items-center justify-center gap-3 text-[#a1a1a1] text-sm font-normal leading-normal mb-2'>
                         <div className='border-6 border-[rgba(0,185,22,0.22)] rounded-full animate-pulse'>
-                            <div className='bg-[rgba(0,185,22,0.77)] w-3 h-3 rounded-full'></div>
+                            <div className='bg-[rgb(0,185,22)] w-3 h-3 rounded-full'></div>
                         </div>
                         <p>Available to work on new projects! Let's talk.</p>
                     </div>
-                    <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition-colors duration-300'>Book a Strategy Call</a>
+                    <a href="#consultation" className='group/btn border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition-colors duration-300'>Book a Strategy Call 
+                      <svg 
+                      viewBox="0 0 17 17" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="inline-block h-3 w-3 ml-3 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                    >
+                    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                    </svg>
+                    </a>
                 </div>
             </div>
         </section>

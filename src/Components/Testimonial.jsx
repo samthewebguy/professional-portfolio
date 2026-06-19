@@ -102,7 +102,7 @@ const Testimonial = () => {
         {/* Show More CTA */}
         <div className='w-full max-w-[680px] flex items-end justify-end gap-6 mt-6 text-center'>
             {hasMoreTestimonials && (
-                <button type='button' onClick={handleShowAll} className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Show All Testimonials ({Testimonials.length - visibleCount} More)
+                <button type='button' onClick={handleShowAll} className='cursor-pointer border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition duration-300'>Show All Testimonials ({Testimonials.length - visibleCount} More)
                 </button>
             )}
         </div>

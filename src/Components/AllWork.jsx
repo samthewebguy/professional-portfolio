@@ -89,20 +89,20 @@ const AllWork = () => {
 
             <div 
               key={project.id || index} 
-              className="w-full sticky top-[18%] md:top-[15%] origin-top transition-transform duration-200"
+              className="w-full sticky top-[16%] md:top-[15%] origin-top transition-transform duration-200"
               style={{ 
               zIndex: index + 1,
               transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`
               }}
             >
             
-            <div className='group w-full p-6 rounded-xl flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
-              <img src={project.image} alt={project.alt} className='project-image w-full h-auto object-cover border border-[#4B4B4B38] rounded-xl shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
-              <div>
+            <div className='group w-full rounded-lg flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
+              <img src={project.image} alt={project.alt} className='project-image w-full aspect-4/3 sm:aspect-video md:h-[400px] object-cover border border-[#4B4B4B38] rounded-lg shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
+              <div className='p-6 pb-0'>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
                 <p className='text-[#A1A1A1] text-md font-normal leading-normal'>{project.description}</p>
               </div>
-              <div className='w-full flex flex-col md:flex-row items-start justify-between mt-4 gap-6'>
+              <div className='w-full flex flex-col md:flex-row items-start justify-between pl-6 pr-6 pb-6 mt-4 gap-6'>
                 <div className="flex items-center gap-2">
                   {project.tools.map((tool, index) => (
                   <img key={index} src={tool.icon} alt={tool.name} title={tool.name} className="bg-[rgba(75,75,75,0.07)] rounded-sm shadow-md shadow-[#000000]/20 p-1 h-8 w-8 object-contain grayscale-0 md:grayscale md:invert-0 group-hover:grayscale-0 transition duration-300"/>

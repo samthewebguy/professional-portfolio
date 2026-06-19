@@ -100,7 +100,16 @@ const About = ({ showTestimonial = false }) => {
                     When I'm not working, you'll usually find me brainstorming new ideas, sharing thoughts on X, or catching up on tech trends. And of course, it's Chelsea FC for life! For me, building for the web isn't just about syntax; it's about delivering systems that move businesses forward.
                     </p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
-                        <a href="#consultation" className='border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-lg font-medium transition duration-300'>Book a Strategy Call</a>
+                        <a href="#consultation" className='group/btn border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition duration-300'>Book a Strategy Call
+                        <svg 
+                            viewBox="0 0 17 17" 
+                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            className="inline-block h-3 w-3 ml-3 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                        >
+                          <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                        </svg>
+                        </a>
                     </div>
                 </div>
             </div>

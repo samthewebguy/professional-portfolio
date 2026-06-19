@@ -147,8 +147,8 @@ export const Stacks = [
     alt: "Lovable AI logo",
   },
   {
-    name: "Page Speed Insights",
-    image: "/Stacks/PageSpeed.png",
-    alt: "Page Speed Insights logo",
+    name: "Lenis",
+    image: "/Stacks/lenis.png",
+    alt: "Lenis smooth scroll logo",
   },
 ];

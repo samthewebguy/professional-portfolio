@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting to Luxedelia...</title>
+</head>
+<body>
+  <!-- Hidden form that matches Shopify's exact password submission structure -->
+  <form id="shopify-bypass" method="post" action="https://luxedelia.myshopify.com/password">
+    <input type="hidden" name="form_type" value="storefront_password" />
+    <input type="hidden" name="password" value="luxedelia" />
+  </form>
+
+  <script>
+    document.getElementById('shopify-bypass').submit();
+  </script>
+</body>
+</html>
