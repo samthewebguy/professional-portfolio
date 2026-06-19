@@ -8,7 +8,7 @@ export const Projects = [
     alt: "Beneath The Gloss website preview cover image",
     title: "Beneath The Gloss",
     description: 
-    "Beneath The Gloss is a modern approach to growth, guiding the people and organizations navigating the convergence of business, brand, and well-being through consulting, coaching, and speaking. I custom-built this high-performance site to translate their intentional identity into a seamless digital experience.",
+    "I custom-built a high-performance site for Beneath The Gloss, a modern approach to growth, guiding the people and organizations navigating the convergence of business, brand, and well-being through consulting, coaching, and speaking.",
 
     tools: [
       {
@@ -42,7 +42,7 @@ export const Projects = [
     alt: "Terra Tunnel website preview cover image",
     title: "Terra Tunnel Group",
     description: 
-    "A custom-designed and built website for Terra Tunnel Group, a multidisciplinary construction and infrastructure firm. The platform showcases their complex project coordination, advisory services, and specialist technical capabilities.",
+    "A custom-designed and built website for Terra Tunnel Group, a multidisciplinary firm. The site showcases their complex project coordination, advisory services, and specialist technical capabilities.",
 
     tools: [
       {
@@ -73,7 +73,7 @@ export const Projects = [
     alt: "DiventurAI website preview cover image",
     title: "DiventurAI",
     description: 
-    "I built the landing page for DiventurAI, a mobile platform that uses AI to turn any location into a personalised adventure for families and explorers. I focused on translating the app assets and core messaging into a high-converting and responsive web experience.",
+    "I built the landing page for DiventurAI, a mobile platform that uses AI to turn any location into a personalised adventure for families and explorers. I translated the app assets and core messaging into a high-converting web experience.",
 
     tools: [
       {
@@ -107,7 +107,7 @@ export const Projects = [
     alt: "Luxedelia website preview cover image",
     title: "Luxedelia",
     description: 
-    "Luxedelia is an e-commerce brand specialising in luxury indoor lighting. I designed the dropshipping Shopify store, focusing on a premium, neutral palette, clean typography, and curated collections to give the store a high-end style that drives sales.",
+    "Luxedelia is an e-commerce brand specialising in luxury indoor lighting. I built the Shopify store, handling everything from product uploads and layout design to SEO and backend settings to drive sales.",
 
     tools: [
       {
@@ -134,7 +134,7 @@ export const Projects = [
     alt: "Professional Portfolio Website preview cover image",
     title: "Professional Portfolio Website",
     description:
-      "A production-grade, full-stack portfolio built with React.js, Tailwind CSS, and GSAP using a clean, modular component architecture. Engineered from scratch, featuring a seamless Figma-to-code workflow, isolated data configurations, Git version control, and optimised Vercel deployment.",
+      "A production-grade, full-stack portfolio built with React.js, Tailwind CSS, and GSAP. Engineered from scratch via a Figma-to-code workflow, featuring a modular component architecture, isolated data configs, Git version control, and optimised deployment.",
 
     tools: [
       {
