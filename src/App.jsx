@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
@@ -14,11 +15,16 @@ import Stack from './Components/Stack'
 import Footer from './Components/Footer'
 import WorldTime from './Components/WorldTime'
 import CustomCursor from './Components/CustomCursor';
+import ScrollToTop from './Components/ScrollToTop';
+import PageTransition from './Components/PageTransition';
+import InitialLoader from './Components/InitialLoader';
 
 // 1. Register the ScrollTrigger plugin with GSAP globally
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+
+  const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
     // 2. Initialize Lenis
@@ -50,6 +56,9 @@ function App() {
 
   return (
     <>
+    {!hasLoaded && <InitialLoader onComplete={() => setHasLoaded(true)} />}
+      <PageTransition />
+      <ScrollToTop />
       <CustomCursor />
       <Header/>
       <main>

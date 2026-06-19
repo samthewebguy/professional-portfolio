@@ -89,15 +89,15 @@ const About = ({ showTestimonial = false }) => {
                          ))}
                     </h3>
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    My tech journey truly started in 2021 when I built my first website using Groove Funnels. Since then, I've specialized in engineering high-performance, revenue-driven websites for global clients, scaling brand architectures across Shopify, Squarespace, Webflow, and custom frameworks. Driven by curiosity and a relentless focus on what's possible, I expanded into frontend development to push the boundaries of what a website can do. Today, I write clean, custom code to build highly functional, conversion-focused web applications.
+                    My tech journey started back in 2021 when I built my first funnel using Groove Funnels. I realized that a great website is not completely effective if it doesn't talk to the rest of your business. Today, I don't just write custom code or build pretty pages, I build entire digital ecosystems. I look at the whole picture to make sure your front-facing website seamlessly connects with your backend operations.
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    Both paths have allowed me to partner with startups and global brands to handle technical complexity and bring their ideas to life. With me, your website performs flawlessly and works hard for your business.
+                    When you work with me, I handle the technical chaos. Beyond developing high-performance sites across Webflow, Shopify, and custom frameworks, I wire up your entire backend. I set up your CRMs, configure email systems, and map out automated workflows so leads are captured and funneled into your pipeline on autopilot.
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    When I'm not working, you'll usually find me brainstorming new ideas, sharing thoughts on X, or catching up on tech trends. And of course, it's Chelsea FC for life! For me, building for the web isn't just about syntax; it's about delivering systems that move businesses forward.
+                    Outside of work, you'll find me on X, tinkering with side projects, or supporting Chelsea FC for life. For me, it isn't about syntax or layouts; it's about cutting out manual work and moving your business forward.
                     </p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
                         <a href="#consultation" className='group/btn border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition duration-300'>Book a Strategy Call

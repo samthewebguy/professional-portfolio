@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 import SelectedProjects from './Components/SelectedProjects';
-import About from './Components/About';
 import Services from './Components/Services';
 import Stack from './Components/Stack';
 import Testimonial from './Components/Testimonial';
