@@ -100,7 +100,7 @@ export default function InitialLoader({ onComplete }) {
         
         {/* Typographic Mask */}
         <div ref={textContainerRef} className="will-change-[clip-path]">
-          <h1 className="text-6xl md:text-9xl font-md tracking-tighter text-[#111] uppercase font-sans">
+          <h1 className="text-4xl md:text-9xl font-md tracking-tighter text-[#111] uppercase font-sans">
             SAMTHEWEBGUY
           </h1>
           <p className="text-sm md:text-sm font-mono tracking-widest text-neutral-500 uppercase mt-3">
