@@ -86,11 +86,18 @@ const Testimonial = () => {
         >
             
             <div className='group bg-[#4B4B4B1C] w-full flex flex-col items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
-                <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>"{testimonial.statement}"</p>
-                <div className='flex flex-row items-start justify-center text-left gap-4'>
+                <p className='order-2 text-md text-[#a1a1a1] text-left font-normal leading-normal'>"{testimonial.statement}"</p>
+                <div className='flex flex-row items-start justify-center text-left gap-4 order-1'>
                     <img src={testimonial.image} alt={testimonial.alt} className='w-12 h-12 object-cover object-center rounded-full shadow-md shadow-[#000000]/20' />
                     <div className='flex flex-col items-start justify-center text-left gap-1'>
-                        <p className='text-md text-white font-medium leading-tight'>{testimonial.client}</p>
+                        <p className='flex items-center text-md text-white font-medium leading-tight'>{testimonial.client}
+                          <span className='inline-block w-3 h-3 ml-1'>
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.73341 1L4.46675 3.13333L2.06675 3.66667L2.30008 6.13333L0.666748 8L2.30008 9.86667L2.06675 12.3333L4.46675 12.8667L5.73341 15L8.00008 14.0333L10.2667 15L11.5334 12.8667L13.9334 12.3333L13.7001 9.86667L15.3334 8L13.7001 6.13333L13.9334 3.66667L11.5334 3.13333L10.2667 1L8.00008 1.96667L5.73341 1Z" fill="#F5F5F7"/>
+                              <path d="M7.30008 10.3667L11.0667 6.6L10.1334 5.63333L7.30008 8.46667L5.86675 7.06667L4.93341 8L7.30008 10.3667Z" fill="#000000"/>
+                          </svg>
+                          </span>
+                          </p>
                         <span className='text-sm text-[#a1a1a1] text-left font-normal leading-normal'>{testimonial.title}</span>
                     </div>
                 </div>

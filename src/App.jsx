@@ -9,7 +9,6 @@ import Header from './Components/Header'
 import Home from './Home'
 import Work from './Work'
 import About from './Components/About'
-import FloatingBadge from './Components/FloatingBadge'
 import Services from './Components/Services'
 import Stack from './Components/Stack'
 import Footer from './Components/Footer'
@@ -18,11 +17,15 @@ import CustomCursor from './Components/CustomCursor';
 import ScrollToTop from './Components/ScrollToTop';
 import PageTransition from './Components/PageTransition';
 import InitialLoader from './Components/InitialLoader';
+import FloatingDock from './Components/FloatingDock';
+import FloatingBadge from './Components/FloatingBadge'
 
 // 1. Register the ScrollTrigger plugin with GSAP globally
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [hasLoaded, setHasLoaded] = useState(false);
 
@@ -62,7 +65,6 @@ function App() {
       <CustomCursor />
       <Header/>
       <main>
-        <FloatingBadge/>
         <WorldTime />
         <Routes>
           <Route path='/' element={<Home/>} />
@@ -71,6 +73,8 @@ function App() {
           <Route path='/services' element={<Services showTestimonial={true} />} />
           <Route path='/stack' element={<Stack />} />
         </Routes>
+        <FloatingDock />
+        <FloatingBadge />
       </main>
       <Footer />
     </>
