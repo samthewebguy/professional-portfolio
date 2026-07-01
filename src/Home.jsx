@@ -85,6 +85,26 @@ const Home = () => {
   return (
     <div ref={pageRef}>
 
+      <Helmet>
+        {/* Core Page SEO */}
+        <title>Samuel Obazee — Web Developer & Systems Builder</title>
+        <meta name="description" content="Helping brands build functional websites and connected systems that drive revenue. 4+ years of engineering across Squarespace, Shopify, Webflow, and custom frameworks." />
+
+        {/* LinkedIn / WhatsApp / Universal Open Graph Preview */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content="Samuel Obazee — Web Developer & Systems Builder" />
+        <meta property="og:description" content="4+ years connecting websites, automations, and payment systems into seamless digital infrastructure that works for your business." />
+        <meta property="og:image" content={`${siteUrl}/portfolio-og-banner.png`} />
+
+        {/* X / Twitter Card Media Override */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={siteUrl} />
+        <meta name="twitter:title" content="Samuel Obazee — Web Developer & Systems Builder" />
+        <meta name="twitter:description" content="4+ years connecting websites, automations, and payment systems into seamless digital infrastructure that works for your business." />
+        <meta name="twitter:image" content={`${siteUrl}/portfolio-og-banner.png`} />
+      </Helmet>
+
         {/* Hero Section */}
 
         <section className='w-full flex flex-col items-center justify-center mt-44 px-6'>
