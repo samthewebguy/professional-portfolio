@@ -73,15 +73,15 @@ const About = ({ showTestimonial = false }) => {
 
   return (
     <>
-        <section ref={aboutSectionRef} className='w-full flex flex-col items-center justify-center mt-40 px-6'>
-            <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-8'>
-                <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>About Me</h2>
+        <section ref={aboutSectionRef} className='w-full flex flex-col items-center justify-center mt-45 px-6'>
+            <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-2'>
+                <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>About Me</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Driven by curiosity. Built for conversion.</p>
             </div>
             <div className='w-full max-w-[680px] grid grid-cols-1 md:grid-cols-2 items-center justify-start mt-10 gap-10'>
                 <img src={SamHeadshot} alt="Samuel Obazee headhsot photograph" className='w-full h-120 md:h-full object-cover object-center rounded-sm' />
                 <div className='flex flex-col items-start justify-center text-left gap-4'>
-                    <h3 className='about-reveal-heading-wrapper text-xl md:text-2xl text-white font-medium leading-snug flex flex-wrap gap-x-1.5 gap-y-1'>
+                    <h3 className='about-reveal-heading-wrapper text-xl text-white font-medium leading-snug flex flex-wrap gap-x-1.5 gap-y-1'>
                     {"Think of me as someone who loves learning and figuring out how things work".split(" ").map((word, i) => (
                         <span key={i} className='about-word-reveal-h3 inline-block'>
                         {word}

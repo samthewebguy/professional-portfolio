@@ -45,7 +45,7 @@ const CustomCursor = () => {
       {/* Precision Core Dot */}
       <div
         ref={cursorDotRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9999] h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ffffff6a] hidden md:block"
+        className="pointer-events-none fixed left-0 top-0 z-9999 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ffffffb3] hidden md:block"
       />
       
       <div

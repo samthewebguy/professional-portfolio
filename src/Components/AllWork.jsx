@@ -73,9 +73,9 @@ const AllWork = () => {
 
   return (
     <>
-    <section className='w-full flex flex-col items-center justify-center mt-40 px-6'>
+    <section className='w-full flex flex-col items-center justify-center mt-45 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
-            <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Completed Work</h2>
+            <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>Completed Work</h2>
             <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
                 <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
                 <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Code</button>

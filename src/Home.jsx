@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef } from 'react';
-import SamuelHeadShot from './assets/Samuel+Obazee+Headshot.png'
+import SamuelHeadShot from './assets/Samuel+Obazee+Headshot.JPG'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faBuilding } from "@fortawesome/free-regular-svg-icons";
@@ -90,7 +90,7 @@ const Home = () => {
         <section className='w-full flex flex-col items-center justify-center mt-44 px-6'>
             <div className='w-full max-w-[680px] flex flex-col items-start justify-center'>
                 <div className='hero-fade-in flex flex-row items-center justify-center gap-4'>
-                    <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-15 h-20 object-cover rounded-sm' />
+                    <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-18 h-18 object-cover rounded-full' />
                     <div className='flex flex-col items-start justify-center text-left'>
                         <h4 className='scramble-title text-lg text-white font-medium leading-normal'>Samuel Obazee</h4>
                         <p className='text-md text-[#a1a1a1] font-normal leading-normal'>Web Developer & Systems Builder</p>

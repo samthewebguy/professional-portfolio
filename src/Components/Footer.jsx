@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className='w-full flex flex-col items-center justify-center mt-40 px-6 mb-20'>
         <section className='w-full max-w-[680px] flex flex-col items-center justify-center gap-6'>
             <div className='w-full flex flex-row items-center justify-between gap-4'>
-                <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>Let's Work Together</h2>
+                <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>Let's Work Together</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Available to take on new projects!</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 ))}
                 <div className='w-full flex flex-row items-center justify-between gap-2 border-t border-b border-[#4B4B4B80] py-4 mt-10 hover:bg-[#4b4b4b21] transition-colors duration-300'>
-                    <p className='text-md text-white text-left font-medium leading-tight'>Portfolio UI design</p>
+                    <p className='text-md text-white text-left font-medium leading-tight'>Portfolio UI Design</p>
                     <a href="https://amirah.vzy.io" target='_blank' rel='noopener noreferrer' className='group flex flex-row items-center text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300 gap-1'>
                         <span>Amirah (Product Designer)</span>
                         {/* Premium Dynamic Custom SVG Arrow */}

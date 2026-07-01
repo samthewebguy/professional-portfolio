@@ -60,9 +60,9 @@ const Testimonial = () => {
   }, { dependencies: [visibleCount], scope: testimonialsContainerRef });
 
   return (
-    <section id="testimonial" className='w-full flex flex-col items-center justify-center mt-40 px-6'>
+    <section id="testimonial" className='w-full flex flex-col items-center justify-center mt-45 px-6'>
         <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
-            <h2 className='text-xl md:text-2xl text-[#a1a1a1] font-medium leading-tight'>What Founders Have To Say</h2>
+            <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>What Founders Have To Say</h2>
             <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Fortunate to work with amazing brands</p>
         </div>
 
