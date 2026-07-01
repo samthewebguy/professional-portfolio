@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRef } from 'react';
-import { Helmet } from 'react-helmet-async';
 import SamuelHeadShot from './assets/Samuel+Obazee+Headshot.JPG'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -15,8 +14,6 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 
 const Home = () => {
-
-  const siteUrl = "https://samthewebguy.com";
 
     const pageRef = useRef();
 
@@ -87,26 +84,6 @@ const Home = () => {
 
   return (
     <div ref={pageRef}>
-
-      <Helmet>
-        {/* Core Page SEO */}
-        <title>Samuel Obazee — Web Developer & Systems Builder</title>
-        <meta name="description" content="Helping brands build functional websites and connected systems that drive revenue. 4+ years of engineering across Squarespace, Shopify, Webflow, and custom frameworks." />
-
-        {/* LinkedIn / WhatsApp / Universal Open Graph Preview */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={siteUrl} />
-        <meta property="og:title" content="Samuel Obazee — Web Developer & Systems Builder" />
-        <meta property="og:description" content="Building high-performance websites and automated systems for small businesses and global brands. 4+ years of shipping setups that actually work." />
-        <meta property="og:image" content={`${siteUrl}/portfolio-og-banner.png`} />
-
-        {/* X / Twitter Card Media Override */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={siteUrl} />
-        <meta name="twitter:title" content="Samuel Obazee — Web Developer & Systems Builder" />
-        <meta name="twitter:description" content="Building high-performance websites and automated systems for small businesses and global brands. 4+ years of shipping setups that actually work." />
-        <meta name="twitter:image" content={`${siteUrl}/portfolio-og-banner.png`} />
-      </Helmet>
 
         {/* Hero Section */}
 
