@@ -16,7 +16,7 @@ import { gsap } from 'gsap';
 
 const Home = () => {
 
-  const siteUrl = "https://samthewebguy.dev";
+  const siteUrl = "https://samthewebguy.com";
 
     const pageRef = useRef();
 
