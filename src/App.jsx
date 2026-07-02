@@ -75,8 +75,6 @@ function App() {
         </Routes>
         <FloatingDock />
         <FloatingBadge />
-        {/* Premium Bottom Blur Mask */}
-        <div className="fixed bottom-0 left-0 right-0 h-18 bg-linear-to-t from-[#121212] via-[#121212]/80 to-transparent backdrop-blur-[2px] pointer-events-none z-999" />
       </main>
       <Footer />
     </>
