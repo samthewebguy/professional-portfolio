@@ -7,7 +7,7 @@ const FloatingBadge = ({ isMobileMenuOpen = false }) => {
 
   return (
     
-    <div className='fixed bottom-4 right-4 w-40 z-50 pointer-events-none hidden md:block'>
+    <div className='fixed bottom-4 right-4 w-40 z-9999 pointer-events-none hidden md:block'>
         <img 
           src={SquarespaceBadge} 
           alt="Squarespace circle gold partner badge" 
