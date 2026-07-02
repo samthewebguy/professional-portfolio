@@ -45,12 +45,12 @@ const CustomCursor = () => {
       {/* Precision Core Dot */}
       <div
         ref={cursorDotRef}
-        className="pointer-events-none fixed left-0 top-0 z-9999 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ffffffb3] hidden md:block"
+        className="pointer-events-none fixed left-0 top-0 z-9999 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ffffffb3] block"
       />
       
       <div
         ref={cursorRingRef}
-        className="pointer-events-none fixed left-0 top-0 z-9999 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#595959cf] hidden md:block"
+        className="pointer-events-none fixed left-0 top-0 z-9999 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#595959cf] block"
       />
     </>
   );

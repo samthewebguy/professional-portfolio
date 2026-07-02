@@ -44,7 +44,7 @@ const Footer = () => {
                     <a href={link.to} target='_blank' rel='noopener noreferrer' className='group flex flex-row items-center text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300 gap-1'>
                         <span>{link.link}</span>
                         {/* Premium Dynamic Custom SVG Arrow */}
-                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transition-transform duration-200 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transform transition-transform duration-200 ease-out group-hover:rotate-45 group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-1">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                         </svg>
                     </a>
@@ -55,7 +55,7 @@ const Footer = () => {
                     <a href="https://amirah.vzy.io" target='_blank' rel='noopener noreferrer' className='group flex flex-row items-center text-md text-[#a1a1a1] hover:text-white font-normal leading-normal transition-colors duration-300 gap-1'>
                         <span>Amirah (Product Designer)</span>
                         {/* Premium Dynamic Custom SVG Arrow */}
-                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transition-transform duration-200 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transform transition-transform duration-200 ease-out group-hover:rotate-45 group-hover:scale-105  group-hover:translate-x-1">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                         </svg>
                     </a>

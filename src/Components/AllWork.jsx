@@ -115,7 +115,7 @@ const AllWork = () => {
                       viewBox="0 0 17 17" 
                       fill="none" 
                       xmlns="http://www.w3.org/2000/svg" 
-                      className="h-2 w-2 ml-2 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                      className="h-2 w-2 ml-2 transform transition-transform duration-200 ease-out group-hover/btn:rotate-45 group-hover/btn:scale-105  group-hover/btn:translate-x-1"
                     >
                     <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                     </svg>

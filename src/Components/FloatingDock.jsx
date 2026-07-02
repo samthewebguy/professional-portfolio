@@ -1,27 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const FloatingDock = ({ isMobileMenu = false }) => {
   const [isVisible, setIsVisible] = useState(isMobileMenu);
+  // Keep track of the last scroll position to calculate direction
+  const lastScrollY = useRef(0);
 
-  // Monitor scroll depth to toggle visibility state
   useEffect(() => {
-
     if (isMobileMenu) {
       setIsVisible(true);
       return;
     }
 
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsVisible(true);
-      } else {
+      const currentScrollY = window.scrollY;
+
+      // 1. Always hide when near the very top of the page
+      if (currentScrollY < 100) {
         setIsVisible(false);
+      } 
+      // 2. If scrolling DOWN, hide the dock to uncover project CTAs
+      else if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false);
+      } 
+      // 3. If scrolling UP, smoothly bring the dock back into view
+      else {
+        setIsVisible(true);
       }
+
+      // Update the reference with the current position for the next frame
+      lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isMobileMenu]);
 
   const handleScrollToCal = (e) => {
     e.preventDefault();
@@ -33,18 +45,17 @@ const FloatingDock = ({ isMobileMenu = false }) => {
 
   return (
     <div 
-      className={`fixed bottom-6 left-1/2 z-9999 -translate-x-1/2 px-4 w-auto transition-all duration-500 ease-in-out ${
+      className={`fixed bottom-6 left-1/2 z-[9999] -translate-x-1/2 px-4 w-auto transition-all duration-500 ease-in-out ${
         isVisible 
           ? 'opacity-100 transform translate-y-0 pointer-events-auto' 
-          : 'opacity-0 transform translate-y-4 pointer-events-none'
+          : 'opacity-0 transform translate-y-10 pointer-events-none'
       }`}
     >
-      
       <div className="flex flex-row items-center justify-between gap-6 px-6 py-3 rounded-full bg-[#121212]/80 backdrop-blur-md border border-[#4B4B4B4D] shadow-xl shadow-black/40">
         
         {/* Social Links Layout */}
         <div className="flex flex-row items-center gap-5">
-          {/* X (Twitter) Icon */}
+          {/* X Profile */}
           <a 
             href="https://x.com/technioo" 
             target="_blank" 
@@ -57,7 +68,7 @@ const FloatingDock = ({ isMobileMenu = false }) => {
             </svg>
           </a>
 
-          {/* GitHub Icon */}
+          {/* GitHub Profile */}
           <a 
             href="https://github.com/samthewebguy" 
             target="_blank" 
@@ -70,7 +81,7 @@ const FloatingDock = ({ isMobileMenu = false }) => {
             </svg>
           </a>
 
-          {/* LinkedIn Icon */}
+          {/* LinkedIn Profile */}
           <a 
             href="https://www.linkedin.com/in/samthewebguy" 
             target="_blank" 
@@ -84,7 +95,6 @@ const FloatingDock = ({ isMobileMenu = false }) => {
           </a>
         </div>
 
-        
         <div className="h-5 w-px bg-[#4B4B4B80]" />
 
         {/* Call to Action */}

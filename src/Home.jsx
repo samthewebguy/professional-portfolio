@@ -87,7 +87,7 @@ const Home = () => {
 
         {/* Hero Section */}
 
-        <section className='w-full flex flex-col items-center justify-center mt-44 px-6'>
+        <section className='w-full flex flex-col items-center justify-center mt-45 px-6'>
             <div className='w-full max-w-[680px] flex flex-col items-start justify-center'>
                 <div className='hero-fade-in flex flex-row items-center justify-center gap-4'>
                     <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-18 h-18 object-cover rounded-full' />
@@ -139,7 +139,7 @@ const Home = () => {
                       viewBox="0 0 17 17" 
                       fill="none" 
                       xmlns="http://www.w3.org/2000/svg" 
-                      className="inline-block h-3 w-3 ml-3 transition-transform duration-200 ease-out group-hover/btn:scale-105 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+                      className="inline-block h-3 w-3 ml-3 transform transition-transform duration-200 ease-out group-hover/btn:rotate-45 group-hover/btn:scale-105 group-hover/btn:translate-x-1"
                     >
                     <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                     </svg>
