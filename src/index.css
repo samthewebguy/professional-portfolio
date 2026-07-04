@@ -80,3 +80,25 @@
 
 }
 }
+
+.hero-photo-name,
+.text-fade-in-word,
+.hero-divider-label,
+.hero-body-row,
+.hero-cta {
+  opacity: 0;
+}
+
+.hero-divider-line {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.selected-projects-header,
+.selected-card-column {
+  opacity: 0;
+}
+
+.service-card-item {
+  opacity: 0;
+}

@@ -2,26 +2,24 @@ import React, { useState, useRef } from 'react'
 import { Projects } from '../projects'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-
-// 1. Import GSAP hooks and registration
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SelectedProjects = () => {
+const SelectedProjects = ({ hasLoaded }) => {
 
   const [filter, setFilter] = useState('WD');
   
-  // 2. Create the wrapper ref for component scoping
-  const cardsContainerRef = useRef();
+  const sectionRef = useRef();
 
   const handleFilterChange = (newFilter) => {
       setFilter(newFilter);
     };
 
   const filteredProjects = Projects.filter(project => {
+
     if (filter === 'ALL') {
       return true;
     }
@@ -31,28 +29,45 @@ const SelectedProjects = () => {
     return a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' });
   });
 
-  // 3. Initialize the scroll-triggered animation loop watching the filter state
   useGSAP(() => {
+    
+    if (!hasLoaded) return; 
+
+    gsap.fromTo('.selected-projects-header',
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.selected-projects-header',
+          start: 'top 85%',
+          toggleActions: 'play none none none'
+        }
+      }
+    );
+
     const selectedCards = gsap.utils.toArray('.selected-card-column');
-    
-    
+
     ScrollTrigger.getAll().forEach(t => {
       if (t.trigger && t.trigger.classList.contains('selected-card-column')) {
         t.kill();
       }
     });
 
-   
     selectedCards.forEach((card) => {
-      gsap.fromTo(card, 
-        { 
-          opacity: 0, 
-          y: 40
+      gsap.fromTo(card,
+        {
+          opacity: 0,
+          y: 50,
+          scale: 0.96
         },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
+          scale: 1,
+          duration: 0.9,
           ease: 'power4.out',
           scrollTrigger: {
             trigger: card,
@@ -63,15 +78,22 @@ const SelectedProjects = () => {
       );
     });
 
-  }, { dependencies: [filter], scope: cardsContainerRef });
+  }, { dependencies: [filter, hasLoaded], scope: sectionRef });
 
   const getButtonClass = (buttonFilter) => {
-    const baseClasses = 'cursor-pointer transition-colors duration-300 px-2 py-1 rounded-full text-sm font-normal border border-[#1b1b1b]';
-    const inactiveClasses = 'text-[#a1a1a1] hover:text-white hover:border-[#4b4b4b]';
-    const activeClasses = 'bg-black text-[#a1a1a1]';
+  const isSelected = filter === buttonFilter;
+  
+  const baseClasses = 'relative pb-3 text-md font-medium tracking-tight cursor-pointer transition-colors duration-300 outline-none';
+  
+  const activeText = 'text-white';
+  const inactiveText = 'text-[#a1a1a1] hover:text-white';
+  
+  const underlineIndicator = isSelected 
+    ? 'after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-white after:rounded-full' 
+    : 'after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-transparent';
 
-    return `${baseClasses} ${filter === buttonFilter ? activeClasses : inactiveClasses}`;
-    };
+  return `${baseClasses} ${isSelected ? activeText : inactiveText} ${underlineIndicator}`;
+};
 
     const handleScrollToTestimonials = (e) => {
     e.preventDefault();
@@ -84,22 +106,37 @@ const SelectedProjects = () => {
 };
 
   return (
-    <section className='w-full flex flex-col items-center justify-center mt-30 px-6'>
-        <div className='hero-fade-in w-full max-w-[680px] flex flex-row items-center justify-between gap-4'>
-            <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>Selected Work</h2>
-            <div className='tabs flex flex-row items-center justify-center gap-2 text-sm text-[#4b4b4b] text-left font-normal leading-tight '>
-                <button type='button' onClick={() => handleFilterChange('WD')} className={getButtonClass('WD')}>Projects</button>
-                <button type='button' onClick={() => handleFilterChange('FD')} className={getButtonClass('FD')}>Code</button>
-            </div>
+    <section ref={sectionRef}  className='w-full flex flex-col items-center justify-center mt-30 px-6'>
+        <div className='selected-projects-header w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
+          <h2 className='text-xl md:text-2xl text-white font-medium tracking-tight'>
+          Selected Work
+          </h2>
+  
+          <div className='tabs flex flex-row items-center justify-start gap-8 text-sm font-normal text-left border-b border-[#4b4b4b]/20  pb-px'>
+          <button 
+            type='button' 
+            onClick={() => handleFilterChange('WD')} 
+            className={getButtonClass('WD')}
+          >
+            Projects
+          </button>
+          <button 
+            type='button' 
+            onClick={() => handleFilterChange('FD')} 
+            className={getButtonClass('FD')}
+        >
+          Code
+        </button>
+        </div>
         </div>
 
         {/* Projects Grid Container */}
         
-        <div ref={cardsContainerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-10'>
+        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-16 gap-10'>
           {filteredProjects.map ((project, index) => (
             <div 
               key={project.id || index} 
-              className="w-full sticky top-[16%] md:top-[15%] origin-top transition-transform duration-200"
+              className="selected-card-column w-full sticky top-[16%] md:top-[15%] origin-top transition-transform duration-200"
               style={{ 
               zIndex: index + 1,
               transform: `scale(${1 - (filteredProjects.length - 1 - index) * 0.01})`

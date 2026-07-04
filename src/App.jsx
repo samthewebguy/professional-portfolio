@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from './Components/Header'
 import Home from './Home'
@@ -63,14 +64,14 @@ function App() {
       <PageTransition />
       <ScrollToTop />
       <CustomCursor />
-      <Header/>
+      <Header hasLoaded={hasLoaded}/>
       <main>
         <WorldTime />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home hasLoaded={hasLoaded}/>} />
           <Route path='/work' element={<Work showTestimonial={true} />} />
-          <Route path='/about' element={<About showTestimonial={true} />} />
-          <Route path='/services' element={<Services showTestimonial={true} />} />
+          <Route path='/about' element={<About showTestimonial={true} hasLoaded={hasLoaded} />} />
+          <Route path='/services' element={<Services showTestimonial={true} hasLoaded={hasLoaded} />} />
           <Route path='/stack' element={<Stack />} />
         </Routes>
         <FloatingDock />

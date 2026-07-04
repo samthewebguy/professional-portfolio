@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react'
 import { MyServices } from '../allServices'
 import Testimonial from './Testimonial'
 
-// 1. Import the necessary GSAP utilities
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,11 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const INITIAL_SERVICE_COUNT = 3;
 
-const Services = ({showTestimonial}) => {
+const Services = ({ showTestimonial, hasLoaded }) => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_SERVICE_COUNT);
-  
-  // 2. Setup a container ref to scope the animations
-  const servicesContainerRef = useRef();
+  const sectionRef = useRef();
+  const animatedIndexesRef = useRef(new Set());
 
   const hasMoreServices = visibleCount < MyServices.length;
 
@@ -26,20 +24,32 @@ const Services = ({showTestimonial}) => {
 
   const servicesToShow = MyServices.slice(0, visibleCount); 
 
-  // 3. Track visibleCount so GSAP catches newly injected elements instantly
   useGSAP(() => {
+    if (!hasLoaded) return;
+
+    // Heading: title + subheadline fade up together, once, on scroll
+    gsap.fromTo('.services-header',
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.services-header',
+          start: 'top 85%',
+          toggleActions: 'play none none none'
+        }
+      }
+    );
+
     const serviceItems = gsap.utils.toArray('.service-card-item');
 
-    // Clean up old triggers so they don't stack up in memory on click
-    ScrollTrigger.getAll().forEach(t => {
-      if (t.trigger && t.trigger.classList.contains('service-card-item')) {
-        t.kill();
-      }
-    });
+    serviceItems.forEach((item, index) => {
+      if (animatedIndexesRef.current.has(index)) return; 
+      animatedIndexesRef.current.add(index);
 
-    // Animate each item independently as it rolls into the viewport
-    serviceItems.forEach((item) => {
-      gsap.fromTo(item, 
+      gsap.fromTo(item,
         { 
           opacity: 0, 
           y: 40 
@@ -58,18 +68,18 @@ const Services = ({showTestimonial}) => {
       );
     });
 
-  }, { dependencies: [visibleCount], scope: servicesContainerRef });
+  }, { dependencies: [visibleCount, hasLoaded], scope: sectionRef });
 
   return (
     <>
-      <section className='w-full flex flex-col items-center justify-center mt-45 px-6'>
-        <div className='w-full max-w-[680px] flex flex-row items-center justify-between gap-8'>
+      <section ref={sectionRef} className='w-full flex flex-col items-center justify-center mt-45 px-6'>
+        <div className='services-header w-full max-w-[680px] flex flex-row items-center justify-between gap-8'>
           <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>What I Do Best</h2>
           <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Let me handle the technical stuff for you</p>
         </div>
         
         
-        <div ref={servicesContainerRef} className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
+        <div className='w-full max-w-[680px] flex flex-col items-center justify-center mt-10 gap-10'>
           {servicesToShow.map((service, index) => (
             
             <div key={index} className='service-card-item group bg-[#4B4B4B1C] w-full flex flex-row items-start justify-start gap-6 p-6 rounded-3xl border border-[#4B4B4B80] hover:border-[#4b4b4bc2] shadow-sm shadow-[#000000]/20 transition-colors duration-300'>
