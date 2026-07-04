@@ -13,7 +13,7 @@ const INITIAL_TESTIMONIAL_COUNT = 2;
 const Testimonial = () => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_TESTIMONIAL_COUNT);
   
-  // 2. Add the container ref for safe scoping
+
   const testimonialsContainerRef = useRef();
 
   const hasMoreTestimonials = visibleCount < Testimonials.length;
@@ -25,18 +25,16 @@ const Testimonial = () => {
 
   const testimonialToShow = Testimonials.slice(0, visibleCount); 
 
-  // 3. Setup the animation loop tied to the visibleCount state change
   useGSAP(() => {
     const testimonialCards = gsap.utils.toArray('.testimonial-card-item');
 
-    // Prevent trigger stacking in memory
+
     ScrollTrigger.getAll().forEach(t => {
       if (t.trigger && t.trigger.classList.contains('testimonial-card-item')) {
         t.kill();
       }
     });
 
-    // Fade and slide each column into view beautifully
     testimonialCards.forEach((card) => {
       gsap.fromTo(card, 
         { 
@@ -66,8 +64,6 @@ const Testimonial = () => {
             <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Fortunate to work with amazing brands</p>
         </div>
 
-        
-      {/* Dynamically switch between standard flex/grid for initial view and masonry columns for expanded view */}
       <div 
       ref={testimonialsContainerRef} 
       className={`w-full max-w-[680px] mt-10 gap-6 ${

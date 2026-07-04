@@ -22,7 +22,7 @@ const Footer = () => {
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Available to take on new projects!</p>
             </div>
             <div className='w-full flex flex-col items-start justify-between mt-10 gap-4'>
-                <p className='text-lg text-white text-left font-medium leading-tight'>Ready to level up your website?</p>
+                <p className='text-lg text-white text-left font-medium leading-tight'>Have something worth building? Let's talk.</p>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal'>Trusted by 50+ businesses globally to architect high-performance, conversion-focused websites.</p>
             </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
                         <span>{link.link}</span>
                         {/* Premium Dynamic Custom SVG Arrow */}
                         <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transform transition-transform duration-200 ease-out group-hover:rotate-45 group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:translate-x-1">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                         </svg>
                     </a>
                     </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                         <span>Amirah (Product Designer)</span>
                         {/* Premium Dynamic Custom SVG Arrow */}
                         <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 ml-2 transform transition-transform duration-200 ease-out group-hover:rotate-45 group-hover:scale-105  group-hover:translate-x-1">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 0h11.2a.7.7 0 0 1 .8.8V12a.7.7 0 1 1-1.5 0V2.6L1.3 16.3a.8.8 0 0 1-1.1-1L13.9 1.4H4.5a.8.8 0 0 1 0-1.5" fill="currentColor"></path>
                         </svg>
                     </a>
                 </div>

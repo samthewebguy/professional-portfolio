@@ -1,7 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react'
@@ -25,13 +24,11 @@ import FloatingBadge from './Components/FloatingBadge'
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [hasLoaded, setHasLoaded] = useState(false);
+  const lenisRef = useRef(null);
 
   useEffect(() => {
-    // 2. Initialize Lenis
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -40,18 +37,13 @@ function App() {
       smoothWheel: true,
     });
 
-    // 3. Synchronize GSAP ScrollTrigger with Lenis updates
+    lenisRef.current = lenis;
     lenis.on('scroll', ScrollTrigger.update);
-
-    // 4. Hook Lenis into GSAP's high-performance ticker
     gsap.ticker.add((time) => {
-      lenis.raf(time * 1000); // Convert seconds to milliseconds for Lenis
+      lenis.raf(time * 1000);
     });
-
-    // 5. Disable lag smoothing in GSAP for perfectly synced scroll animations
     gsap.ticker.lagSmoothing(0);
 
-    // Clean up when the component unmounts
     return () => {
       lenis.destroy();
       gsap.ticker.remove(lenis.raf);
@@ -59,10 +51,11 @@ function App() {
   }, []);
 
   return (
+
     <>
     {!hasLoaded && <InitialLoader onComplete={() => setHasLoaded(true)} />}
       <PageTransition />
-      <ScrollToTop />
+      <ScrollToTop lenisRef={lenisRef} />
       <CustomCursor />
       <Header hasLoaded={hasLoaded}/>
       <main>
@@ -70,7 +63,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home hasLoaded={hasLoaded}/>} />
           <Route path='/work' element={<Work showTestimonial={true} />} />
-          <Route path='/about' element={<About showTestimonial={true} hasLoaded={hasLoaded} />} />
+          <Route path='/about' element={<About showTestimonial={true} />} />
           <Route path='/services' element={<Services showTestimonial={true} hasLoaded={hasLoaded} />} />
           <Route path='/stack' element={<Stack />} />
         </Routes>
@@ -78,7 +71,8 @@ function App() {
         <FloatingBadge />
       </main>
       <Footer />
-    </>
+  </>
+
   )
 }
 

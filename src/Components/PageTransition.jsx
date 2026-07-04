@@ -15,16 +15,16 @@ export default function PageTransition() {
       .set(overlayRef.current, { yPercent: 0 }) 
       .to(overlayRef.current, {
         yPercent: -100,
-        duration: 0.5,
+        duration: 0.7,
         ease: 'power3.inOut',
-        delay: 0.05 // Tiny buffer to let the new route mount safely
+        delay: 0.05
       });
   }, [pathname]);
 
   return (
     <div 
       ref={overlayRef} 
-      className="fixed inset-0 bg-[#111] pointer-events-none"
+      className="fixed inset-0 bg-[#121212] pointer-events-none"
       style={{ zIndex: 9999 }}
     />
   );

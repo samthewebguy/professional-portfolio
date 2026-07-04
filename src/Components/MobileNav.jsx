@@ -5,11 +5,11 @@ import { gsap } from 'gsap';
 import FloatingDock from './FloatingDock';
 
 const MobileNav = ({ isOpen, onClose }) => {
-if (!isOpen) return null;
 
   const navContainerRef = useRef();
 
   useGSAP(() => {
+    if (!isOpen) return;
     gsap.fromTo('.mobile-nav-item',
       { opacity: 0, y: 20 },
       {
@@ -21,7 +21,9 @@ if (!isOpen) return null;
         delay: 0.1
       }
     );
-  }, { scope: navContainerRef });
+  }, { scope: navContainerRef, dependencies: [isOpen] });
+
+   if (!isOpen) return null; 
 
   return (
     <>
