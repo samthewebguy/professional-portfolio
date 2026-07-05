@@ -6,6 +6,7 @@ export const Projects = [
     id: "WD01",
     image: "/Projects/beneaththegloss-mockup.webp",
     alt: "Beneath The Gloss website preview cover image",
+    tag: "Squarespace Design & Development",
     title: "Beneath The Gloss",
     description: 
     "I custom-built a high-performance site for Beneath The Gloss, a modern approach to growth, guiding the people and organizations navigating the convergence of business, brand, and well-being through consulting, coaching, and speaking.",
@@ -40,6 +41,7 @@ export const Projects = [
     id: "WD02",
     image: "/Projects/terra-tunnel-mockup.webp",
     alt: "Terra Tunnel website preview cover image",
+    tag: "Squarespace Design & Development",
     title: "Terra Tunnel Group",
     description: 
     "A custom-designed and built website for Terra Tunnel Group, a multidisciplinary firm. The site showcases their complex project coordination, advisory services, and specialist technical capabilities.",
@@ -71,6 +73,7 @@ export const Projects = [
     id: "WD04",
     image: "/Projects/diventurai-mockup.webp",
     alt: "DiventurAI website preview cover image",
+    tag: "Carrd Design & Development",
     title: "DiventurAI",
     description: 
     "I built the landing page for DiventurAI, a mobile platform that uses AI to turn any location into a personalised adventure for families and explorers. I translated the app assets and core messaging into a high-converting web experience.",
@@ -105,6 +108,7 @@ export const Projects = [
     id: "WD03",
     image: "/Projects/luxedelia-mockup.webp",
     alt: "Luxedelia website preview cover image",
+    tag: "Shopify Design & Development",
     title: "Luxedelia",
     description: 
     "Luxedelia is an e-commerce brand specialising in luxury indoor lighting. I built the Shopify store, handling everything from product uploads and layout design to SEO and backend settings to drive sales.",
@@ -132,6 +136,7 @@ export const Projects = [
     id: "FD01",
     image: "/Projects/portfolio-mockup.webp",
     alt: "Professional Portfolio Website preview cover image",
+    tag: "LEAD FRONTEND",
     title: "Professional Portfolio Website",
     description:
       "A production-grade, full-stack portfolio built with React.js, Tailwind CSS, and GSAP. Engineered from scratch via a Figma-to-code workflow, featuring a modular component architecture, isolated data configs, Git version control, and optimised deployment.",
@@ -175,6 +180,7 @@ export const Projects = [
     id: "FD02",
     image: "/Projects/vuejs-mockup.webp",
     alt: "Vue.js website clone preview cover image",
+    tag: "Engineering",
     title: "Vue.js Clone",
     description:
       "I recreated the Vue.js Website with custom React and TailwindCSS as a personal project to showcase my front-end development skills, including component architecture, complex array mapping, and responsive UI engineering.",
@@ -214,6 +220,7 @@ export const Projects = [
     id: "FD03",
     image: "/Projects/advice-generator-mockup.webp",
     alt: "Advice Generator App preview cover image",
+    tag: "Design & Engineering",
     title: "Advice Generator App",
     description:
       "I built an advice generator app that fetches random advice from the Advice Slip API. It focuses on working with APIs, handling asynchronous JavaScript, and creating clean, responsive layouts.",

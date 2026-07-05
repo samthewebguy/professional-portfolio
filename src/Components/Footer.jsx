@@ -64,7 +64,7 @@ const Footer = () => {
         </section>
         
         <div className='w-full max-w-[690px] flex items-center justify-center text-center mt-10'>
-            <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>&copy; Samthewebguy {currentYear}. All rights reserved | Website Development by Samuel Obazee </p>
+            <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>&copy; {currentYear} Samthewebguy . Samuel Obazee . All Rights Reserved | Site Development by Samthewebguy </p>
         </div>
     </footer>
   )

@@ -6,6 +6,7 @@ export const AllProjects = [
     id: "WD04",
     image: "/Projects/WFP.png",
     alt: "World Fertility Project website preview cover image",
+    tag: "Squarespace Design & Development",
     title: "World Fertility Project",
     description: 
     "The World Fertility Project is a global movement uniting innovators, advocates, individuals, legacy organizations, and policy makers who are reimagining the future of fertility and family building.",
@@ -44,6 +45,7 @@ export const AllProjects = [
     id: "WD01",
     image: "/Projects/beneaththegloss-mockup.webp",
     alt: "Beneath The Gloss website preview cover image",
+    tag: "Squarespace Design & Development",
     title: "Beneath The Gloss",
     description: 
     "I custom-built a high-performance site for Beneath The Gloss, a modern approach to growth, guiding the people and organizations navigating the convergence of business, brand, and well-being through consulting, coaching, and speaking.",
@@ -79,6 +81,7 @@ export const AllProjects = [
     id: "WD02",
     image: "/Projects/terra-tunnel-mockup.webp",
     alt: "Terra Tunnel website preview cover image",
+    tag: "Squarespace Design & Development",
     title: "Terra Tunnel Group",
     description: 
     "A custom-designed and built website for Terra Tunnel Group, a multidisciplinary firm. The site showcases their complex project coordination, advisory services, and specialist technical capabilities.",
@@ -110,6 +113,7 @@ export const AllProjects = [
     id: "WD03",
     image: "/Projects/luxedelia-mockup.webp",
     alt: "Luxedelia website preview cover image",
+    tag: "Shopify Design & Development",
     title: "Luxedelia",
     description: 
     "Luxedelia is an e-commerce brand specialising in luxury indoor lighting. I built the Shopify store, handling everything from product uploads and layout design to SEO and backend settings to drive sales.",
@@ -137,6 +141,7 @@ export const AllProjects = [
     id: "WD05",
     image: "/Projects/j-portman-mockup.webp",
     alt: "J-Portman website preview cover image",
+    tag: "Carrd Design & Development",
     title: "J-Portman",
     description: 
     "I designed and built a landing page for J-Portman, a brand that help ambitious companies in the Middle East and beyond clarify their identity, elevate their presence, and create brands people actually connect with.",
@@ -168,6 +173,7 @@ export const AllProjects = [
     id: "WD06",
     image: "/Projects/diventurai-mockup.webp",
     alt: "DiventurAI website preview cover image",
+    tag: "Carrd Design & Development",
     title: "DiventurAI",
     description: 
     "I built the landing page for DiventurAI, a mobile platform that uses AI to turn any location into a personalised adventure for families and explorers. I translated the app assets and core messaging into a high-converting web experience.",
@@ -203,6 +209,7 @@ export const AllProjects = [
     id: "FD02",
     image: "/Projects/vuejs-mockup.webp",
     alt: "Vue.js website clone preview cover image",
+    tag: "Engineering",
     title: "Vue.js Clone",
     description:
       "I recreated the Vue.js Website with custom React and TailwindCSS as a personal project to showcase my front-end development skills, including component architecture, complex array mapping, and responsive UI engineering.",
@@ -241,6 +248,7 @@ export const AllProjects = [
     id: "FD03",
     image: "/Projects/advice-generator-mockup.webp",
     alt: "Advice Generator App preview cover image",
+    tag: "Design & Engineering",
     title: "Advice Generator App",
     description:
       "I built an advice generator app that fetches random advice from the Advice Slip API. It focuses on working with APIs, handling asynchronous JavaScript, and creating clean, responsive layouts.",
@@ -275,6 +283,7 @@ export const AllProjects = [
     id: "FD04",
     image: "/Projects/Word-letter-counter.gif",
     alt: "Word and Letter Counter preview cover image",
+    tag: "Design & Engineering",
     title: "Word and Letter Counter",
     description:
       "I built a simple web app that counts the number of words and letters in a given text input.",
@@ -306,6 +315,7 @@ export const AllProjects = [
     id: "FD01",
     image: "/Projects/portfolio-mockup.webp",
     alt: "Professional Portfolio Website preview cover image",
+    tag: "Lead Frontend",
     title: "Professional Portfolio Website",
     description:
       "A production-grade, full-stack portfolio built with React.js, Tailwind CSS, and GSAP. Engineered from scratch via a Figma-to-code workflow, featuring a modular component architecture, isolated data configs, Git version control, and optimised deployment.",
@@ -348,6 +358,7 @@ export const AllProjects = [
     id: "FD05",
     image: "/Projects/CentralHQ.gif",
     alt: "CentralHQ clone preview cover image",
+    tag: "Engineering",
     title: "CentralHQ Clone",
     description:
       "A fully custom clone of the CentralHQ website, recreated as a personal project to improve my front-end development skills.",
@@ -381,6 +392,7 @@ export const AllProjects = [
     id: "FD06",
     image: "/Projects/Extension-manager.gif",
     alt: "Browser Extensions Manager preview cover image",
+    tag: "Design & Engineering",
     title: "Browser Extensions Manager",
     description:
       "Functional browser extension manager built with HTML, CSS, and JavaScript. Includes dynamic rendering, add/remove logic, and optimized UI performance.",

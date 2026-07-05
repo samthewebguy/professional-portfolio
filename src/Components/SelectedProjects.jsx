@@ -143,7 +143,21 @@ const SelectedProjects = ({ hasLoaded }) => {
               }}
             >
             <div className='group w-full rounded-lg flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
-              <img src={project.image} alt={project.alt} className='project-image w-full aspect-4/3 sm:aspect-video md:h-[400px] object-cover border border-[#4B4B4B38] rounded-lg shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'/>
+              {/* Image Container with Absolute Position Context */}
+              <div className="relative w-full overflow-hidden rounded-lg">
+                <img 
+                   src={project.image} 
+                  alt={project.alt} 
+                  className='project-image w-full aspect-4/3 sm:aspect-video md:h-[400px] object-cover border border-[#4B4B4B38] rounded-lg shadow-2xl shadow-[#000000]/60 hover:shadow-[#000000]/70'
+                />
+                {project.tag && (
+                  <div className="absolute top-4 left-4 px-4 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/10 shadow-lg pointer-events-none select-none">
+                    <span className="text-[10px] md:text-xs font-mono tracking-widest text-neutral-300 uppercase">
+                      {project.tag}
+                    </span>
+                  </div>
+                )}
+              </div>
               <div className='p-6 pb-0'>
                 <h4 className='text-white text-lg font-normal leading-tight mb-4'>{project.title}</h4>
                 <p className='text-[#A1A1A1] text-md font-normal leading-normal'>{project.description}</p>
