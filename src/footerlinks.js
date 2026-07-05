@@ -25,6 +25,6 @@ export const FooterLinks = [
     {
         title: "X (Twitter)",
         link: "Let's connect",
-        to: "https://www.x.com/technioo",
+        to: "https://www.x.com/ReachSAMonX",
     }
 ];

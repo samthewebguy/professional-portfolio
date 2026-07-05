@@ -57,7 +57,7 @@ const FloatingDock = ({ isMobileMenu = false }) => {
         <div className="flex flex-row items-center gap-5">
           {/* X Profile */}
           <a 
-            href="https://x.com/technioo" 
+            href="https://x.com/ReachSAMonX" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-[#a1a1a1] hover:text-white transition-colors duration-200"
