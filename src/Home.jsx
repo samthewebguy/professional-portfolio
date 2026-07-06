@@ -8,6 +8,7 @@ import SelectedProjects from './Components/SelectedProjects';
 import Services from './Components/Services';
 import Stack from './Components/Stack';
 import Testimonial from './Components/Testimonial';
+import LogoIcon from './assets/logo-icon.svg';
 
 
 import { useGSAP } from '@gsap/react';
@@ -112,11 +113,11 @@ const Home = ({ hasLoaded }) => {
             <img src={SamuelHeadShot} alt="Samuel Obazee headshot photograph" className='w-18 h-18 object-cover rounded-full' />
             <div className='flex flex-col items-start justify-center text-left'>
                 <h4 className='scramble-title text-lg text-white font-medium leading-normal'>Samuel Obazee</h4>
-                <p className='text-md text-[#a1a1a1] font-normal leading-normal'>Web Developer & Systems Builder</p>
+                <p className='text-sm text-[#a1a1a1] font-normal leading-normal'>Web Developer & Systems Builder</p>
             </div>
         </div>
-        <div className='flex flex-col items-center justify-center mt-4 gap-4'>
-            <h1 className='text-2xl md:text-3xl text-white font-medium leading-tight flex flex-wrap gap-x-2 gap-y-1'>
+        <div className='flex flex-col items-center justify-center mt-10 gap-4'>
+            <h1 className='text-2xl md:text-3xl text-white font-medium leading-tight flex flex-wrap items-baseline gap-x-2 gap-y-1'>
                 {"Translating Brand Positioning into".split(" ").map((word, index) => (
                     <span key={`gray-${index}`} className="text-fade-in-word inline-block">
                         {word}
@@ -127,6 +128,13 @@ const Home = ({ hasLoaded }) => {
                         {word}
                     </span>
                 ))}
+                <span className="text-fade-in-word inline-block align-baseline ml-1">
+                  <img 
+                  src={LogoIcon} 
+                  alt="logo icon" 
+                  className="h-8 w-8 md:h-12 md:w-12 animate-[spin_4s_linear_infinite] object-contain inline-block"
+                  />
+                </span>
             </h1>
         </div>
         <div className='hero-divider w-full flex flex-row items-center justify-center gap-4 mt-8'>

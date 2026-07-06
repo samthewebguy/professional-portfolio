@@ -94,7 +94,7 @@ const AllWork = () => {
     <section ref={sectionRef} className='w-full flex flex-col items-center justify-center mt-45 px-6'>
         <div className='selected-projects-header w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
           <h2 className='text-xl md:text-2xl text-white font-medium tracking-tight'>
-          Selected Work
+          All Works
           </h2>
   
           <div className='tabs flex flex-row items-center justify-start gap-8 text-sm font-normal text-left border-b border-[#4b4b4b]/20  pb-px'>

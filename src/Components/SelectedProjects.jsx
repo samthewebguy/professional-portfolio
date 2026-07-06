@@ -109,7 +109,7 @@ const SelectedProjects = ({ hasLoaded }) => {
     <section ref={sectionRef}  className='w-full flex flex-col items-center justify-center mt-30 px-6'>
         <div className='selected-projects-header w-full max-w-[680px] flex flex-row items-center justify-between gap-6'>
           <h2 className='text-xl md:text-2xl text-white font-medium tracking-tight'>
-          Selected Work
+          Featured Works
           </h2>
   
           <div className='tabs flex flex-row items-center justify-start gap-8 text-sm font-normal text-left border-b border-[#4b4b4b]/20  pb-px'>
@@ -143,7 +143,7 @@ const SelectedProjects = ({ hasLoaded }) => {
               }}
             >
             <div className='group w-full rounded-lg flex flex-col items-start justify-center gap-4 bg-[#161616] border border-[#4B4B4B80] shadow-2xl shadow-black/80'>
-              {/* Image Container with Absolute Position Context */}
+
               <div className="relative w-full overflow-hidden rounded-lg">
                 <img 
                    src={project.image} 

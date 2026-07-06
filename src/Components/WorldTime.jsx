@@ -7,7 +7,6 @@ const LocalTimeDisplay = () => {
     const updateLocalTime = () => {
         const now = new Date();
         
-        // Hours, minutes, and the time zone abbreviation display options
         const options = { 
             hour: '2-digit', 
             minute: '2-digit', 
@@ -15,14 +14,11 @@ const LocalTimeDisplay = () => {
             timeZoneName: 'short' 
         };
         
-        // Visitor's local settings to format time
         const timeString = now.toLocaleTimeString(undefined, options); 
         
         setCurrentTime(timeString);
     };
     
-    // useEffect to manage the timed update
-
     useEffect(() => {
         
         updateLocalTime(); 
@@ -33,8 +29,8 @@ const LocalTimeDisplay = () => {
     }, []);
 
     return (
-        <div className='fixed top-4 right-4 text-sm text-[#a1a1a1] font-normal leading-normal '>
-            <p>Local Time: <span>{currentTime}</span></p> 
+        <div className='fixed bottom-4 left-4 text-sm text-[#a1a1a1] font-normal leading-normal hidden md:block z-1'>
+            <p><span>{currentTime}</span></p> 
         </div>
     );
 };
