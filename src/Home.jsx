@@ -8,7 +8,6 @@ import SelectedProjects from './Components/SelectedProjects';
 import Services from './Components/Services';
 import Stack from './Components/Stack';
 import Testimonial from './Components/Testimonial';
-import LogoIcon from './assets/logo-icon.svg';
 
 
 import { useGSAP } from '@gsap/react';
@@ -128,13 +127,6 @@ const Home = ({ hasLoaded }) => {
                         {word}
                     </span>
                 ))}
-                <span className="text-fade-in-word inline-block align-baseline ml-1">
-                  <img 
-                  src={LogoIcon} 
-                  alt="logo icon" 
-                  className="h-8 w-8 md:h-12 md:w-12 animate-[spin_4s_linear_infinite] object-contain inline-block"
-                  />
-                </span>
             </h1>
         </div>
         <div className='hero-divider w-full flex flex-row items-center justify-center gap-4 mt-8'>
