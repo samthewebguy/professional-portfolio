@@ -93,11 +93,11 @@ const About = ({ showTestimonial = false }) => {
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    When you work with me, I handle the technical chaos. Beyond developing high-performance sites across Webflow, Shopify, and custom frameworks, I wire up your entire backend. I set up your CRMs, configure email systems, and map out automated workflows so leads are captured and funneled into your pipeline on autopilot.
+                    When you work with me, I handle the technical chaos. Beyond developing high-performance sites across Squarespace, Shopify, etc. and custom frameworks, I wire up your entire backend. I set up your CRMs, configure email systems, and map out automated workflows so leads are captured and funneled into your pipeline on autopilot.
                     </p>
 
                     <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>
-                    Outside of work, you'll find me on X, tinkering with side projects, or supporting Chelsea FC for life. For me, it isn't about syntax or layouts; it's about cutting out manual work and moving your business forward.
+                    Outside of work, you'll either find me on X, tinkering with side projects, learning about construction sector trends, or supporting my favourite football club. For me, it isn't about syntax or layouts; it's about cutting out manual work and moving your business forward.
                     </p>
                     <div className='w-full max-w-[680px] flex gap-6 mt-6 text-center'>
                         <a href="#consultation" className='group/btn border border-[#4B4B4B] py-3 px-6 rounded-full text-[#A1A1A1] hover:text-white text-md font-medium transition duration-300'>Book a Strategy Call
