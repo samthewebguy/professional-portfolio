@@ -2,32 +2,39 @@
 
 export const MyServices = [
   {
-    title: "Website Development",
-    description: "Designing and building responsive, high-performing websites structured for growth, whether custom-built or on platforms like Squarespace, Shopify, Webflow, or WordPress.",
+    title: "Website Design, Development & Redesign",
+    description: "Custom website design, redesign, migration, and ongoing management for Squarespace, Shopify, Webflow, WordPress, and custom websites. Every site is responsive, SEO-friendly, easy to use, and built to support business growth.",
     icon: "/Services/responsive.png",
-    alt: "Custom website development icon",
+    alt: "Website design and development services",
   },
   {
-    title: "Landing Pages & Marketing Funnels",
-    description: "High-impact landing pages built for conversions, ideal for product launches, campaigns, lead generation, and personal brands.",
+    title: "Landing Pages & Sales Funnels",
+    description: "Landing pages, sales pages, and marketing funnels for lead generation, appointments, webinars, product launches, courses, and paid advertising. Designed to turn more visitors into leads and customers.",
     icon: "/Services/sales-funnel.png",
-    alt: "Landing pages and marketing funnels icon",
+    alt: "Landing page and sales funnel design services",
   },
     {
-    title: "E-commerce & Payment System Integration",
-    description: "Connecting your website to Stripe, Shopify, and payment systems with clean checkout flows and backend logic that supports revenue tracking and automation.",
+    title: "Shopify & Ecommerce Development",
+    description: "Online store design, redesign, migration, and optimization for Shopify, Squarespace Commerce, and WooCommerce. Includes product pages, checkout improvements, payment setup, upsells, cross-sells, and ecommerce SEO.",
     icon: "/Services/frontend_development.png",
-    alt: "Frontend development icon",
+    alt: "Shopify and ecommerce development services",
   },
   {
-    title: "Automation & Workflow Setup",
-    description: "Designing automated workflows that connect forms, payments, CRM, and email systems, reducing manual work and improving operational efficiency.",
+    title: "Membership & Course Websites",
+    description:
+      "Membership websites, online course platforms, student portals, and payment systems built with Kajabi, Squarespace, MemberVault, and custom frameworks for coaches, educators, creators, and organizations.",
+    icon: "/Services/membership.png",
+    alt: "Membership and online course website development",
+  },
+  {
+    title: "Automation & Email Marketing",
+    description: "Automated systems that connect your website, forms, payments, CRM, scheduling, and email marketing. I use tools such as Zapier, Stripe, Airtable, GoHighLevel, Mailchimp, Klaviyo, and Kit to reduce repetitive work.",
     icon: "/Services/automation.png",
-    alt: "Email marketing and workflow automation icon",
+    alt: "Website automation and email marketing services",
   },
   {
-    title: "Digital Infrastructure & Ongoing Optimization",
-    description: "Ensuring your website and connected systems stay optimized, secure, and aligned with long-term growth through technical improvements and structured updates.",
+    title: "SEO, Maintenance & Website Support",
+    description: "On-page SEO, technical SEO, analytics, page-speed improvements, indexing, maintenance, troubleshooting, and custom code. I keep websites visible in search, secure, fast, and working properly as the business grows.",
     icon: "/Services/seo.png",
     alt: "SEO icon",
   },

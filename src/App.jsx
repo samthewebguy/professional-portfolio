@@ -19,6 +19,7 @@ import PageTransition from './Components/PageTransition';
 import InitialLoader from './Components/InitialLoader';
 import FloatingDock from './Components/FloatingDock';
 import FloatingBadge from './Components/FloatingBadge'
+import SEOManager from './Components/SEOManager';
 
 // 1. Register the ScrollTrigger plugin with GSAP globally
 gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +54,8 @@ function App() {
   return (
 
     <>
+    <SEOManager />
+
     {!hasLoaded && <InitialLoader onComplete={() => setHasLoaded(true)} />}
       <PageTransition />
       <ScrollToTop lenisRef={lenisRef} />
