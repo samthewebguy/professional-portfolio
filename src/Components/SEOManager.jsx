@@ -3,14 +3,20 @@ import { useLocation } from "react-router-dom";
 
 const SITE_URL = "https://www.samthewebguy.com";
 
+const PERSON_SAME_AS = [
+  "https://www.linkedin.com/in/samthewebguy",
+  "https://www.x.com/ReachSAMonX",
+  "https://github.com/samthewebguy",
+];
+
 const homepageSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
-      name: "SAMTHEWEBGUY",
-      alternateName: "Samthewebguy",
+      name: "Samthewebguy",
+      alternateName: "SAMTHEWEBGUY",
       url: `${SITE_URL}/`,
       creator: {
         "@id": `${SITE_URL}/#samuel-obazee`,
@@ -44,6 +50,7 @@ const homepageSchema = {
       name: "Samuel Obazee",
       alternateName: "SAMTHEWEBGUY",
       url: `${SITE_URL}/about`,
+      sameAs: PERSON_SAME_AS,
     },
   ],
 };
@@ -75,11 +82,11 @@ const seoPages = {
   },
 
   "/about": {
-    title: "About Samuel Obazee — SAMTHEWEBGUY",
+    title: "About Samuel Obazee — Samthewebguy",
     description:
-      "Learn about Samuel Obazee, also known as SAMTHEWEBGUY, a web developer and systems builder creating websites, ecommerce experiences, and connected business systems.",
+      "Learn about Samuel Obazee, also known as Samthewebguy, a web developer and systems builder creating websites, ecommerce experiences, and connected business systems.",
     pageName: "About Samuel Obazee",
-    schemaType: "AboutPage",
+    schemaType: "ProfilePage",
   },
 
   "/stack": {
@@ -153,13 +160,21 @@ function SEOManager() {
     setMeta("name", "description", page.description);
 
     setMeta("property", "og:type", "website");
+    setMeta("property", "og:site_name", "Samthewebguy");
     setMeta("property", "og:url", canonicalUrl);
     setMeta("property", "og:title", page.title);
     setMeta("property", "og:description", page.description);
     setMeta(
-      "property",
-      "og:image",
-      `${SITE_URL}/portfolio-og-banner.png`
+        "property",
+        "og:image",
+        `${SITE_URL}/portfolio-og-banner.png`
+    );
+    setMeta("property", "og:image:width", "1200");
+    setMeta("property", "og:image:height", "630");
+    setMeta(
+        "property",
+        "og:image:alt",
+        "Samuel Obazee — Samthewebguy portfolio"
     );
 
     setMeta("name", "twitter:card", "summary_large_image");
@@ -167,31 +182,61 @@ function SEOManager() {
     setMeta("name", "twitter:title", page.title);
     setMeta("name", "twitter:description", page.description);
     setMeta(
-      "name",
-      "twitter:image",
-      `${SITE_URL}/portfolio-og-banner.png`
+        "name",
+        "twitter:image",
+        `${SITE_URL}/portfolio-og-banner.png`
+    );
+    setMeta(
+        "name",
+        "twitter:image:alt",
+        "Samuel Obazee — Samthewebguy portfolio"
     );
 
     setCanonical(canonicalUrl);
 
     if (pathname === "/") {
-      setSchema(homepageSchema);
-    } else {
-      setSchema({
-        "@context": "https://schema.org",
-        "@type": page.schemaType,
-        "@id": `${canonicalUrl}#webpage`,
-        name: page.pageName,
-        description: page.description,
-        url: canonicalUrl,
-        isPartOf: {
-          "@id": `${SITE_URL}/#website`,
-        },
-        about: {
-          "@id": `${SITE_URL}/#samuel-obazee`,
-        },
-      });
-    }
+  setSchema(homepageSchema);
+} else if (pathname === "/about") {
+  setSchema({
+    "@context": "https://schema.org",
+    "@type": page.schemaType,
+    "@id": `${canonicalUrl}#webpage`,
+    name: page.pageName,
+    description: page.description,
+    url: canonicalUrl,
+    isPartOf: {
+      "@id": `${SITE_URL}/#website`,
+    },
+    mainEntity: {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#samuel-obazee`,
+      name: "Samuel Obazee",
+      alternateName: "SAMTHEWEBGUY",
+      url: canonicalUrl,
+      image: `${SITE_URL}/samuel-obazee-headshot.jpg`,
+      jobTitle: "Web Developer & Systems Builder",
+      sameAs: PERSON_SAME_AS,
+      description:
+        "Samuel Obazee, professionally known as Samthewebguy, is a web developer and systems builder who helps businesses, startups, coaches, creators, and organizations build high-performing websites, ecommerce stores, landing pages, membership platforms, and online business systems. He also connects websites with payments, CRM, email marketing, and workflow automation to reduce manual work and support business growth. His work includes website development, SEO, performance optimization, integrations, and ongoing technical support.",
+    },
+  });
+} else {
+  setSchema({
+    "@context": "https://schema.org",
+    "@type": page.schemaType,
+    "@id": `${canonicalUrl}#webpage`,
+    name: page.pageName,
+    description: page.description,
+    url: canonicalUrl,
+    isPartOf: {
+      "@id": `${SITE_URL}/#website`,
+    },
+    about: {
+      "@id": `${SITE_URL}/#samuel-obazee`,
+    },
+  });
+}
+    
   }, [location.pathname]);
 
   return null;

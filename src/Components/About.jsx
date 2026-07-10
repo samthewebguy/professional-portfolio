@@ -78,6 +78,9 @@ const About = ({ showTestimonial = false }) => {
                 <h2 className='text-xl md:text-2xl text-white font-medium leading-tight'>About Me</h2>
                 <p className='text-md text-[#a1a1a1] text-left font-normal leading-normal italic '>Driven by curiosity. Built for conversion.</p>
             </div>
+            <div className='w-full max-w-[680px] flex mt-10 flex-col items-start justify-center gap-4'>
+              <p className='about-reveal-text text-md text-[#a1a1a1] font-normal leading-normal'>Samuel Obazee, professionally known as Samthewebguy, is a web developer and systems builder who helps businesses, startups, coaches, creators, and organizations build high-performing websites, ecommerce stores, landing pages, membership platforms, and online business systems. He also connects websites with payments, CRM, email marketing, and workflow automation to reduce manual work and support business growth. His work includes website development, SEO, performance optimization, integrations, and ongoing technical support.</p>
+            </div>
             <div className='w-full max-w-[680px] grid grid-cols-1 md:grid-cols-2 items-center justify-start mt-10 gap-10'>
                 <img src={SamHeadshot} alt="Samuel Obazee headhsot photograph" className='w-full h-120 md:h-full object-cover object-center rounded-sm' />
                 <div className='flex flex-col items-start justify-center text-left gap-4'>
