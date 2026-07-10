@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://samthewebguy.com";
+const SITE_URL = "https://www.samthewebguy.com";
 
 const homepageSchema = {
   "@context": "https://schema.org",
